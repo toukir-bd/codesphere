@@ -102,12 +102,13 @@ p {
   gap: 35px;
 }
 
-.nav-menu>a,
-.nav-item>a {
-  display: block;
-  padding: 38px 0;
-  font-size: 18px;
-  font-weight: 500;
+.nav-menu > a, .nav-item > a {
+	display: flex;
+	padding: 38px 0;
+	font-size: 18px;
+	font-weight: 500;
+	align-items: center;
+	gap: 5px;
 }
 
 .nav-menu>a>i.fa-dropdown,
@@ -268,7 +269,7 @@ p {
   padding: 145px 0 290px;
   background: url("./img/hero-bg.jpg");
   overflow: hidden;
-  background-position: right 0 bottom 20px;
+  background-position: right 0 bottom 0;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 96px;
@@ -430,6 +431,13 @@ p {
   left: 25px;
 }
 
+
+/*=============Card Section==============*/
+.card-section{
+  width:100%;
+  background-color:#dfe4ec;
+}
+
 .card-section .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -473,6 +481,14 @@ p {
   align-items:center;
   display:flex;
   gap:12px;
+}
+
+.card-section .cards .card strong svg{
+  transition: all .35s;
+}
+
+.card-section .cards .card:hover strong svg{
+  transform: translateX(5px);
 }
 
 .card-section .cards .card.purple {
@@ -561,6 +577,189 @@ p {
 
 
 
+/*==============Digital-Section===============*/
+.digital-section {
+	padding: 20px 0 140px;
+	background: #dfe4ec;
+}
+
+.digital-section .main-digital{
+  padding: 0 36px;
+}
+
+.digital-section .digital-wrapper {
+  display: grid;
+  grid-template-columns: 1.04fr 1fr;
+  background: #f7f7f8;
+  overflow: hidden;
+}
+
+.digital-section .digital-wrapper .digital-image {
+  position: relative;
+  min-height: 760px;
+}
+
+.digital-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.digital-content {
+  padding: 150px 36px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.digital-content .digital-label {
+	font-size: 20px;
+	line-height: 1;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	color: #7b4cf5;
+	margin-bottom: 38px;
+}
+
+.digital-content h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #252529;
+  max-width: 100%;
+  margin-bottom: 42px;
+}
+
+.digital-content .digital-desc {
+  max-width: 100%;
+  font-size: 20px;
+  line-height:30px;
+  color: #36363c;
+  font-weight: 400;
+  margin-bottom: 42px;
+}
+
+.digital-content .digital-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 48px;
+}
+
+.digital-content .digital-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  list-style-type:none;
+}
+
+.digital-content .digital-list li span:last-child {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #2f2f34;
+  font-weight: 400;
+}
+
+.digital-content .digital-list li .icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digital-content .digital-list li .icon img{
+  width:auto;
+  height:20px;
+}
+
+/* Button */
+.digital-content .digital-btn {
+	width: fit-content;
+	/* min-height: 58px; */
+	padding: 12px 32px;
+	border-radius: 4px;
+	background: #7b4cf5;
+	box-shadow: 0 10px 24px rgba(123, 76, 245, 0.28);
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 17px;
+	line-height: 1;
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 0.2px;
+	transition: 0.25s ease;
+}
+
+.digital-content .digital-btn:hover {
+  transform: translateY(-2px);
+  background: #6f42eb;
+}
+
+.digital-content .digital-btn span{
+	transition: 0.25s ease;
+}
+
+.digital-content .digital-btn:hover span{
+  transform: translateX(5px);
+}
+
+.digital-content .digital-btn span {
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .digital-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .digital-image {
+    min-height: auto;
+  }
+
+  .digital-content {
+    padding: 60px 40px;
+  }
+
+  .digital-content h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .digital-section {
+    padding: 30px 16px;
+  }
+
+  .digital-content {
+    padding: 40px 24px;
+  }
+
+  .digital-content h2 {
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+  }
+
+  .digital-desc {
+    font-size: 18px;
+  }
+
+  .digital-list li span:last-child {
+    font-size: 17px;
+  }
+
+  .digital-btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    padding: 18px 20px;
+  }
+}
 
 
 
