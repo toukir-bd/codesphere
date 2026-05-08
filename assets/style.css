@@ -936,15 +936,15 @@ p {
 .reference-card a {
 	color: #2f2f2f;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 400;
 	display: inline-flex;
 	align-items: center;
-	gap: 10px;
+	gap: 7px;
 }
 
 .reference-card a:hover{
-    color:#764CF7;
+    color:#1f1f1f;
 }
 
 .reference-card a span {
@@ -955,6 +955,10 @@ p {
 
 .reference-card a:hover span{
     transform: translateX(5px);
+}
+
+.reference-card a:hover span svg{
+    color:#1f1f1f !important;
 }
 
 /* tablet */
