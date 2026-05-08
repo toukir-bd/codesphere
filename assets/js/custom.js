@@ -1,39 +1,81 @@
 
-  
-  /*=========Smooth Scroll==========*/
-  (() => {
-    const lerp = (start, end, factor) => {
-      return start * (1 - factor) + end * factor;
-    };
 
-    const body = document.body;
-    const scrollWrap = document.querySelector(".smooth-scroll");
+/*=========Smooth Scroll==========*/
+(() => {
+  const lerp = (start, end, factor) => {
+    return start * (1 - factor) + end * factor;
+  };
 
-    let current = 0;
-    let target = 0;
-    let ease = 0.075;
+  const body = document.body;
+  const scrollWrap = document.querySelector(".smooth-scroll");
 
-    function setBodyHeight() {
-      body.style.height = `${scrollWrap.getBoundingClientRect().height}px`;
+  let current = 0;
+  let target = 0;
+  let ease = 0.075;
+
+  function setBodyHeight() {
+    body.style.height = `${scrollWrap.getBoundingClientRect().height}px`;
+  }
+
+  function smoothScroll() {
+    target = window.scrollY;
+    current = lerp(current, target, ease);
+
+    if (Math.abs(target - current) < 0.1) {
+      current = target;
     }
 
-    function smoothScroll() {
-      target = window.scrollY;
-      current = lerp(current, target, ease);
+    scrollWrap.style.transform = `translate3d(0, -${current}px, 0)`;
 
-      if (Math.abs(target - current) < 0.1) {
-        current = target;
-      }
+    requestAnimationFrame(smoothScroll);
+  }
 
-      scrollWrap.style.transform = `translate3d(0, -${current}px, 0)`;
+  window.addEventListener("resize", setBodyHeight);
 
-      requestAnimationFrame(smoothScroll);
+  window.addEventListener("load", () => {
+    setBodyHeight();
+    smoothScroll();
+  });
+})();
+
+
+
+/*=========Counter==========*/
+const counters = document.querySelectorAll('.counter');
+const animateCounter = (counter) => {
+  const target = +counter.dataset.target;
+  const suffix = counter.dataset.suffix || '';
+  const prefix = counter.dataset.prefix || '';
+
+  let count = 0;
+
+  const speed = target / 80;
+
+  const update = () => {
+    count += speed;
+
+    if (count < target) {
+      counter.innerText =
+        prefix + Math.floor(count) + suffix;
+      requestAnimationFrame(update);
+    } else {
+      counter.innerText =
+        prefix + target + suffix;
     }
+  };
 
-    window.addEventListener("resize", setBodyHeight);
+  update();
+};
 
-    window.addEventListener("load", () => {
-      setBodyHeight();
-      smoothScroll();
-    });
-  })();
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: .5 });
+
+counters.forEach(counter => {
+  observer.observe(counter);
+});
