@@ -44,12 +44,12 @@ p {
   font-family: "Sora", sans-serif;
 }
 
-.text-center{
-  text-align:center;
+.text-center {
+  text-align: center !important;
 }
 
-.w-100{
-  width:100%;
+.w-100 {
+  width: 100% !important;
 }
 
 .container-wrap {
@@ -643,13 +643,13 @@ p {
 }
 
 .digital-content .digital-desc {
-	max-width: 100%;
-	font-size: 20px;
-	line-height: 30px;
-	color: #36363c;
-	font-weight: 400;
-	margin-bottom: 42px;
-	letter-spacing: -.3px;
+  max-width: 100%;
+  font-size: 20px;
+  line-height: 30px;
+  color: #36363c;
+  font-weight: 400;
+  margin-bottom: 42px;
+  letter-spacing: -.3px;
 }
 
 .digital-content .digital-list {
@@ -703,6 +703,7 @@ p {
   text-decoration: none;
   letter-spacing: 0.2px;
   transition: 0.25s ease;
+  text-transform: uppercase;
 }
 
 .section-btn:hover {
@@ -894,116 +895,394 @@ p {
 
 
 /*==============Refference-Section===============*/
-.references-section{
-    background:#eef0f4;
-    padding:120px 0;
+.references-section {
+  background: #eef0f4;
+  padding: 120px 0;
 }
 
-/* grid */
-.references-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:36px;
+.references-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
 }
 
-/* card */
-.reference-card{
-    background:#fff;
-    border-radius:6px;
-    padding:48px 38px 42px;
-    transition:.3s;
-    height:100%;
+.reference-card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 48px 38px 42px;
+  transition: .3s;
+  height: 100%;
+  justify-content: flex-start;
 }
 
-.reference-card:hover{
-    transform:translateY(-6px);
+.reference-card:hover {
+  transform: translateY(-6px);
 }
 
-.reference-logo{
-    height:110px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-bottom:35px;
+.reference-logo {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
 }
 
 .reference-logo img {
-	width: auto;
-	max-height: 50px;
-	object-fit: contain;
+  max-width: 250px;
+  object-fit: contain;
+  height: 100%;
 }
 
 .reference-card a {
-	color: #2f2f2f;
-	text-decoration: none;
-	font-size: 16px;
-	font-weight: 400;
-	display: inline-flex;
-	align-items: center;
-	gap: 7px;
+  color: #2f2f2f;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
 }
 
-.reference-card a:hover{
-    color:#1f1f1f;
+.reference-card a:hover {
+  color: #1f1f1f;
 }
 
 .reference-card a span {
-	transition: all 0.35s;
-	display: flex;
-	align-items: center;
+  transition: all 0.35s;
+  display: flex;
+  align-items: center;
 }
 
-.reference-card a:hover span{
-    transform: translateX(5px);
+.reference-card a:hover span {
+  transform: translateX(5px);
 }
 
-.reference-card a:hover span svg{
-    color:#1f1f1f !important;
+.reference-card a:hover span svg {
+  color: #1f1f1f !important;
 }
 
 /* tablet */
-@media(max-width:1200px){
-    .references-grid{
-        gap:24px;
-    }
+@media(max-width:1200px) {
+  .references-grid {
+    gap: 24px;
+  }
 
-    .reference-card{
-        min-height:auto;
-        padding:36px 28px;
-    }
+  .reference-card {
+    min-height: auto;
+    padding: 36px 28px;
+  }
 }
 
 /* mobile */
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    .references-section{
-        padding:70px 0;
-    }
+  .references-section {
+    padding: 70px 0;
+  }
 
-    .references-grid{
-        grid-template-columns:1fr;
-        gap:24px;
-    }
+  .references-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 
-    .reference-card{
-        padding:30px 24px;
-    }
+  .reference-card {
+    padding: 30px 24px;
+  }
 
-    .reference-logo{
-        height:80px;
-        margin-bottom:24px;
-    }
+  .reference-logo {
+    height: 80px;
+    margin-bottom: 24px;
+  }
 
-    .reference-logo img{
-        max-width:180px;
-    }
+  .reference-logo img {
+    max-width: 180px;
+  }
 
-    .reference-card a{
-        font-size:16px;
-    }
+  .reference-card a {
+    font-size: 16px;
+  }
 }
 
 
+/*==============Testimonial-Section===============*/
+.testimonial-section {
+  background: #eef0f4;
+  padding: 110px 0;
+}
+
+.testimonial-container {
+  width: 100%;
+  padding: 0 36px;
+  display: grid;
+  grid-template-columns: 393px 1fr;
+  overflow: hidden;
+}
+
+.testimonial-image {
+  position: relative;
+  height: 500px;
+}
+
+.testimonial-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.testimonial-content {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 393px 1fr;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.quote-mark {
+  line-height: .7;
+  user-select: none;
+  height: 100%;
+  padding: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.quote-mark img {
+  width: 240px;
+  max-width: 100%;
+}
+
+.testimonial-text-wrap {
+  padding: 36px;
+}
+
+.testimonial-text {
+  font-size: 28px;
+  line-height: 1.75;
+  color: #2b2b2f;
+  font-weight: 400;
+  margin-bottom: 55px;
+}
+
+.testimonial-author h4 {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #2c2c31;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.testimonial-author span {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #44444a;
+  font-weight: 400;
+}
+
+/* large desktop */
+@media(max-width:1400px) {
+  .testimonial-content {
+    grid-template-columns: 170px 1fr;
+  }
+
+  .quote-mark {
+    font-size: 320px;
+  }
+
+  .testimonial-text {
+    font-size: 28px;
+  }
+}
+
+/* tablet */
+@media(max-width:1100px) {
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-image {
+    height: 520px;
+  }
+
+  .testimonial-content {
+    grid-template-columns: 120px 1fr;
+    padding: 60px 50px;
+  }
+
+  .quote-mark {
+    font-size: 240px;
+    transform: translateY(20px);
+  }
+
+  .testimonial-text {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+/* mobile */
+@media(max-width:768px) {
+  .testimonial-section {
+    padding: 70px 0;
+  }
+
+  .testimonial-container {
+    padding: 0 22px;
+  }
+
+  .testimonial-image {
+    height: 360px;
+  }
+
+  .testimonial-content {
+    grid-template-columns: 1fr;
+    padding: 40px 24px;
+  }
+
+  .quote-mark {
+    font-size: 140px;
+    margin-bottom: 20px;
+    transform: none;
+    line-height: .5;
+  }
+
+  .testimonial-text {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-author h4 {
+    font-size: 16px;
+  }
+
+  .testimonial-author span {
+    font-size: 16px;
+  }
+}
+
+
+/*==============Solutions-Section===============*/
+.solutions-section {
+  background: #eef0f4;
+  padding: 110px 0;
+  overflow: hidden;
+}
+
+.solutions-carousel {
+  position: relative;
+}
+
+/* buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border: none;
+  background: #232323;
+  color: #fff;
+  font-size: 34px;
+  cursor: pointer;
+  z-index: 20;
+  transition: .3s;
+}
+
+.carousel-btn:hover {
+  background: #764CF7;
+}
+
+.carousel-btn.prev {
+  left: -75px;
+}
+
+.carousel-btn.next {
+  right: -75px;
+}
+
+.carousel-btn.disabled{
+    opacity:.35;
+    cursor:not-allowed;
+    pointer-events:none;
+}
+
+.carousel-mask{
+  width:100%;
+    overflow:hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform .7s cubic-bezier(.77, 0, .18, 1);
+  will-change: transform;
+}
+
+.solution-content {
+  width: 100%;
+  padding: 72px;
+}
+
+.solution-slide {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.solution-image {
+  min-height: 525px;
+}
+
+.solution-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media(max-width:1200px) {
+
+  .solution-slide {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-btn.prev {
+    left: 0;
+  }
+
+  .carousel-btn.next {
+    right: 0;
+  }
+}
+
+/* mobile */
+@media(max-width:768px) {
+
+  .solutions-section {
+    padding: 70px 0;
+  }
+
+  .solution-image {
+    min-height: 260px;
+  }
+
+  .carousel-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+  }
+
+  .carousel-btn.prev {
+    left: 8px;
+  }
+
+  .carousel-btn.next {
+    right: 8px;
+  }
+}
 
 
 
