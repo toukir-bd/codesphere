@@ -125,3 +125,28 @@ prevBtn.addEventListener('click', () => {
 });
 
 updateSlider();
+
+
+/*==================FAQ Accordion====================*/
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  const answer = item.querySelector('.faq-answer');
+  question.addEventListener('click', () => {
+    const isActive =
+      item.classList.contains('active');
+    faqItems.forEach(faq => {
+      faq.classList.remove('active');
+      const faqAnswer =
+        faq.querySelector('.faq-answer');
+      faqAnswer.style.height = "0px";
+    });
+
+    /* reopen clicked */
+    if (!isActive) {
+      item.classList.add('active');
+      answer.style.height =
+        answer.scrollHeight + "px";
+    }
+  });
+});
