@@ -52,6 +52,10 @@ p {
   width: 100% !important;
 }
 
+.mb-0 {
+  margin-bottom:0 !important;
+}
+
 .container-wrap {
   width: 100%;
   max-width: 1640px;
@@ -1514,34 +1518,6 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*========Footer=========*/
 .site-footer {
   background: #fff;
@@ -1753,4 +1729,281 @@ p {
   .footer-bottom ul {
     gap: 12px;
   }
+}
+
+
+
+
+
+
+/* =========================
+Inner Pages
+========================= */
+.inner-hero{
+  padding:200px 0 200px;
+}
+.inner-hero .digital-desc{
+  margin-top: 30px;
+  max-width:100%;
+  min-width:1000px;
+}
+
+
+/* ========WHY======== */
+.vc-why {
+  padding: 160px 0;
+  background:#EDEFF5;
+}
+.vc-why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.vc-why-card {
+  background: #fff;
+  padding: 42px;
+}
+
+
+/* =========================
+BENEFITS
+========================= */
+
+.vc-benefits {
+  padding: 120px 0 144px;
+  background:#EDEFF5;
+}
+
+.benefit-intro {
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #36363b;
+  margin-bottom: 55px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.benefit-card {
+  background: #7749ef;
+  padding: 34px 28px;
+  min-height: 270px;
+  color: #fff;
+}
+
+.benefit-card img {
+  width: 48px;
+  margin-bottom: 28px;
+}
+
+.benefit-card h3 {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.benefit-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #fff;
+}
+
+/* =========================
+REASONS
+========================= */
+
+.vc-reasons {
+  padding: 20px 0 140px;
+}
+
+.vc-reasons .container-wrap {
+  padding: 0 36px;
+}
+
+.vc-reasons h2 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -1.5px;
+}
+
+.reason-intro {
+  max-width: 1100px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #35353a;
+  margin-bottom: 70px;
+}
+
+.reason-block {
+  margin-bottom: 48px;
+}
+
+.reason-block h3 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.reason-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+
+.challenge-card,
+.solution-card {
+  background: #fff;
+  padding: 34px;
+}
+
+.challenge-card span,
+.solution-card span {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+
+.challenge-card span {
+  color: #9a9aa3;
+}
+
+.solution-card span {
+  color: #744cf2;
+}
+
+.challenge-card p,
+.solution-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #34343a;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:1200px) {
+
+  .vc-hero-content h1,
+  .vc-why-left h2,
+  .vc-benefits h2,
+  .vc-reasons h2 {
+    font-size: 44px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media(max-width:991px) {
+
+  .vc-hero {
+    padding: 120px 0 120px;
+    background-position: center;
+  }
+
+  .vc-hero-content {
+    max-width: 100%;
+  }
+
+  .vc-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .vc-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vc-why-card {
+    margin-top: 0;
+  }
+
+  .reason-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media(max-width:767px) {
+
+  .vc-hero,
+  .vc-why,
+  .vc-benefits,
+  .vc-reasons {
+    padding: 80px 0;
+  }
+
+  .vc-hero-content,
+  .vc-benefits .container-wrap,
+  .vc-reasons .container-wrap,
+  .vc-why-grid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .vc-hero-content h1,
+  .vc-why-left h2,
+  .vc-benefits h2,
+  .vc-reasons h2 {
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: -1px;
+  }
+
+  .vc-hero-content p,
+  .vc-why-left p,
+  .vc-why-card p,
+  .benefit-intro,
+  .reason-intro {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-card {
+    min-height: auto;
+  }
+
+  .challenge-card,
+  .solution-card,
+  .vc-why-card {
+    padding: 26px;
+  }
+
+  .reason-block h3 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+}
+
+@media(max-width:480px) {
+
+  .vc-hero-content h1,
+  .vc-why-left h2,
+  .vc-benefits h2,
+  .vc-reasons h2 {
+    font-size: 28px;
+  }
+
+  .vc-hero {
+    padding: 90px 0;
+  }
+
 }
