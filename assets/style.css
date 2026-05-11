@@ -210,10 +210,13 @@ p {
 }
 
 .nav-item .mega-menu .product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 72px;
-  row-gap: 25px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 72px;
+	row-gap: 25px;
+	max-width: 1640px;
+	margin: auto;
+	padding: 0 36px;
 }
 
 .nav-item .mega-menu .product-grid .product-item {
@@ -290,6 +293,10 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 96px;
+}
+
+.hero1 {
+  background: url("./img/hero-bg-1.jpg");
 }
 
 .hero-inner {
@@ -537,6 +544,15 @@ p {
   font-size: 24px;
   line-height: 1;
 }
+
+.digital-card{
+  background: #fff;
+  padding: 36px;
+  border-radius: 5px;
+}
+
+
+
 
 
 
@@ -846,6 +862,12 @@ p {
   line-height: 1.4;
   color: #44444a;
   font-weight: 400;
+}
+
+.mission-author {
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
 }
 
 /* large desktop */
@@ -1767,9 +1789,7 @@ Inner Pages
 }
 
 
-/* =========================
-BENEFITS
-========================= */
+/* =======BENEFITS======= */
 
 .vc-benefits {
   padding: 120px 0 144px;
@@ -1811,10 +1831,7 @@ BENEFITS
 
 
 
-/* =========================
-REASONS
-========================= */
-
+/* ========REASONS======== */
 .vc-reasons {
   padding: 60px 0 140px;
   background:#EDEFF5;
@@ -1834,93 +1851,63 @@ REASONS
 .reason-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 26px;
+  gap: 36px;
 }
 
-.challenge-card,
-.solution-card {
+.reason-card{
   background: #fff;
   padding: 34px;
+  border-radius:5px;
 }
 
-.challenge-card span,
-.solution-card span {
-  display: block;
-  margin-bottom: 18px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: .3px;
+.reason-card .digital-label{
+  display:flex;
+  align-items:center;
+  gap:10px;
 }
 
-.challenge-card span {
-  color: #9a9aa3;
+.reason-card .digital-label.dlabel{
+  color:#adb3cf;
 }
 
-.solution-card span {
-  color: #744cf2;
+.reason-card .digital-label img{
+  width:20px;
 }
 
-.challenge-card p,
-.solution-card p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #34343a;
+.reason-card .digital-desc{
+  line-height: 1.2;
+  margin-top:10px;
 }
 
-/* =========================
-RESPONSIVE
-========================= */
-
-@media(max-width:1200px) {
-
-  .benefits-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+/* ========REASONS======== */
+.vc-journey {
+  padding: 120px 0 140px;
+  background: #EDEFF5;
 }
 
-@media(max-width:991px) {
-
-  .vc-why-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .vc-why-card {
-    margin-top: 0;
-  }
-
-  .reason-grid {
-    grid-template-columns: 1fr;
-  }
-
+.journey-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
 }
 
-@media(max-width:767px) {
+.journey-grid .digital-card .digital-desc{
+  margin-top:10px;
+}
 
-  .vc-hero,
-  .vc-why,
-  .vc-benefits,
-  .vc-reasons {
-    padding: 80px 0 0;
-  }
+.stack-image{
+  margin-bottom:36px;
+}
 
-  .benefits-grid {
-    grid-template-columns: 1fr;
-  }
+.stack-image img{
+  width:100px;
+}
 
-  .benefit-card {
-    min-height: auto;
-  }
+.layers-section{
+  padding: 20px 0 100px;
+  background: #EDEFF5;
+}
 
-  .challenge-card,
-  .solution-card,
-  .vc-why-card {
-    padding: 26px;
-  }
-
-  .reason-block h3 {
-    font-size: 20px;
-    line-height: 1.4;
-  }
-
+.layers-section .digital-card img{
+  max-width:100%;
 }

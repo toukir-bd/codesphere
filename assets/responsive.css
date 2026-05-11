@@ -779,3 +779,52 @@
     font-size: 22px;
   }
 }
+
+
+@media(max-width:1200px) {
+
+  .benefits-grid, .journey-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media(max-width:991px) {
+
+  .vc-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vc-why-card {
+    margin-top: 0;
+  }
+
+  .reason-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media(max-width:767px) {
+
+  .vc-hero,
+  .vc-why,
+  .vc-benefits,
+  .vc-reasons {
+    padding: 80px 0 0;
+  }
+
+  .benefits-grid, .journey-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-card {
+    min-height: auto;
+  }
+
+  .reason-block h3 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+}
