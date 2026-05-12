@@ -305,6 +305,10 @@ p {
   padding: 0 36px;
 }
 
+.hero.secure-hero {
+	padding: 125px 0 280px;
+}
+
 .hero-inner .eyebrow {
   color: #764cf2;
   font-size: 20px;
@@ -328,6 +332,11 @@ p {
   background-color: #dfe4ec;
 }
 
+.card-section.secure {
+  width: 100%;
+  background-color: #EDEFF5;
+}
+
 .card-section .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -347,6 +356,14 @@ p {
   display: flex;
   flex-direction: column;
   transition: all 0.35s;
+}
+
+.card-section .cards.secure-card{
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card-section .cards.secure-card .card {
+  height: 205px;
 }
 
 .card-section .cards .card h3 {
@@ -1854,6 +1871,12 @@ Inner Pages
   gap: 36px;
 }
 
+.reason-grid.glance{
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  gap: 36px;
+}
+
 .reason-card{
   background: #fff;
   padding: 34px;
@@ -1910,4 +1933,8 @@ Inner Pages
 
 .layers-section .digital-card img{
   max-width:100%;
+}
+
+.reason-grid.right-txt-btn{
+  justify-content: space-between;
 }

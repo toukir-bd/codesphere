@@ -482,12 +482,12 @@
 
   .card-section .cards {
     grid-template-columns: 1fr;
-
     gap: 24px;
-
     top: -80px;
-
     padding: 0 22px;
+  } 
+  .card-section .cards.secure-card {
+    grid-template-columns: repeat(2,1fr);
   }
 
   .card-section .cards .card {
@@ -611,6 +611,11 @@
   .virtual-cloud-section.secon-vr {
     padding: 10px 0 60px !important;
   }
+    
+  .card-section .cards.secure-card {
+    grid-template-columns: repeat(1,1fr);
+  }
+
 }
 
 @media(max-width:767px) {
