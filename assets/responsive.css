@@ -612,7 +612,8 @@
     padding: 10px 0 60px !important;
   }
     
-  .card-section .cards.secure-card {
+  .card-section .cards.secure-card,
+  .card-section .cards.faster-card{
     grid-template-columns: repeat(1,1fr);
   }
 

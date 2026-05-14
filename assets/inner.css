@@ -876,3 +876,511 @@ RESPONSIVE
     }
 
 }
+
+.case-study-section {
+    padding: 120px 0 140px;
+    background: #EDEFF5;
+}
+
+/* HERO */
+.case-hero {
+    max-width: 950px;
+    margin: 0 auto 200px;
+    text-align: center;
+}
+
+.case-heading {
+    align-items: center;
+}
+
+.case-video video {
+    width: 100%;
+    max-width: 850px;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+}
+
+/* COMMON */
+.case-block {
+    margin-bottom: 240px;
+}
+
+.case-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #252529;
+    margin-bottom: 50px;
+}
+
+/* PROJECT STATS */
+.case-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat-card h2 {
+    font-size: 90px;
+    line-height: 1;
+    color: #7b4cf5;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+
+.stat-card h4 {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #7b4cf5;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.stat-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #36363c;
+}
+
+.logo-card {
+    align-items: center;
+    text-align: center;
+}
+
+.logo-card img {
+    width: 100%;
+    max-width: 220px;
+    object-fit: contain;
+}
+
+/* CHALLENGES */
+.challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.challenge-card {
+    min-height: 170px;
+}
+
+.challenge-card h4 {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #7b4cf5;
+    margin-bottom: 14px;
+}
+
+.challenge-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #36363c;
+}
+
+/* IMPLEMENTATION */
+.implementation-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    background: #fff;
+    padding: 70px;
+    margin-bottom: 140px;
+    align-items: center;
+}
+
+.implementation-image img {
+    width: 100%;
+    display: block;
+}
+
+/* SELF SERVICE */
+.self-service-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+.self-service-image img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+}
+
+/* MANAGED SERVICES */
+.managed-services {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 80px;
+    align-items: end;
+}
+
+.testimonial-card {
+    background: #7b4cf5;
+    overflow: hidden;
+}
+
+.testimonial-image img {
+    width: 100%;
+    display: block;
+}
+
+.testimonial-content {
+    padding: 40px;
+    color: #fff;
+}
+
+.quote-icon {
+    font-size: 120px;
+    line-height: 1;
+    font-weight: 700;
+    opacity: .35;
+    margin-bottom: 20px;
+}
+
+.testimonial-content p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 35px;
+}
+
+.testimonial-author strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.testimonial-author span {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width:1200px) {
+
+    .case-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .challenge-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .managed-services {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .case-study-section {
+        padding: 90px 0 100px;
+    }
+
+    .case-hero {
+        margin-bottom: 100px;
+    }
+
+    .case-block {
+        margin-bottom: 100px;
+    }
+
+    .implementation-box {
+        grid-template-columns: 1fr;
+        padding: 40px;
+        margin-bottom: 100px;
+    }
+
+    .self-service-section {
+        grid-template-columns: 1fr;
+        margin-bottom: 100px;
+    }
+
+    .digital-content h2 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+}
+
+@media (max-width:767px) {
+
+    .case-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .challenge-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .implementation-box {
+        padding: 30px;
+        gap: 40px;
+    }
+
+    .case-title {
+        font-size: 24px;
+    }
+
+    .stat-card h2 {
+        font-size: 70px;
+    }
+
+    .digital-content h2 {
+        font-size: 28px;
+    }
+
+    .testimonial-content {
+        padding: 30px;
+    }
+
+    .tasty-section {
+	    padding: 80px 0 80px;
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+    }
+
+}
+
+@media (max-width:575px) {
+
+    .main-section {
+        padding: 0 20px;
+    }
+
+    .case-study-section {
+        padding: 0px 0 80px;
+    }
+
+    .case-hero {
+        margin-bottom: 80px;
+    }
+
+    .case-block {
+        margin-bottom: 80px;
+    }
+
+    .implementation-box {
+        padding: 24px;
+        margin-bottom: 80px;
+    }
+
+    .self-service-section {
+        gap: 50px;
+        margin-bottom: 0px;
+    }
+
+    .managed-services {
+        gap: 50px;
+    }
+
+    .case-title {
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+
+    .stat-card h2 {
+        font-size: 58px;
+    }
+
+    .digital-content h2 {
+        font-size: 24px;
+    }
+
+    .testimonial-content {
+        padding: 24px;
+    }
+
+    .quote-icon {
+        font-size: 90px;
+    }
+
+}
+
+
+.multi-cloud-section {
+	padding: 120px 0 0;
+	background: #EDEFF5;
+	padding-bottom: 10px;
+}
+
+/* TOP */
+.multi-cloud-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 50px 0 30px;
+}
+
+.cloud-card h4,
+.unified-card h4 {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #7b4cf5;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.cloud-card p,
+.unified-card p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #36363c;
+}
+
+.cloud-full-image {
+    margin-bottom: 160px;
+}
+
+.cloud-full-image img {
+	width: auto;
+	display: block;
+	border-radius: 5px;
+	max-width: 100%;
+	margin: auto;
+}
+
+/* UNIFIED SECTION */
+.unified-section {
+    margin-bottom: 140px;
+}
+
+.unified-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.dashboard-image img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+/* ENDGAME */
+.endgame-section {
+    background: #fff;
+    padding: 120px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.endgame-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.endgame-image img {
+    width: 100%;
+    display: block;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+
+    .endgame-content {
+        padding: 100px 60px;
+        gap: 50px;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .multi-cloud-section {
+        padding: 90px 0 0;
+    }
+
+    .multi-cloud-grid,
+    .unified-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cloud-full-image {
+        margin-bottom: 120px;
+    }
+
+    .unified-section {
+        margin-bottom: 120px;
+    }
+
+    .endgame-content {
+        grid-template-columns: 1fr;
+        padding: 80px 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .cloud-card h4,
+    .unified-card h4 {
+        font-size: 18px;
+    }
+
+    .cloud-card p,
+    .unified-card p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .cloud-full-image {
+        margin-bottom: 100px;
+    }
+
+    .unified-section {
+        margin-bottom: 100px;
+    }
+
+    .endgame-content {
+        padding: 70px 30px;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .multi-cloud-section {
+        padding: 70px 0 0;
+    }
+
+    .main-section {
+        padding: 0 20px;
+    }
+
+    .multi-cloud-grid,
+    .unified-grid {
+        gap: 16px;
+    }
+
+    .cloud-full-image {
+        margin-bottom: 80px;
+    }
+
+    .unified-section {
+        margin-bottom: 80px;
+    }
+
+    .endgame-content {
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .cloud-card h4,
+    .unified-card h4 {
+        font-size: 17px;
+    }
+
+}

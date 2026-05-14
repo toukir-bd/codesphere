@@ -75,7 +75,8 @@
                     <a href="sectors.html">
                       <h4>Sectors</h4>
                     </a>
-                    <p>Discover how organizations across various industries use our platform for their specific needs</p>
+                    <p>Discover how organizations across various industries use our platform for their specific needs
+                    </p>
                     <ul class="mega-links">
                       <li>
                         <a class="active-link" href="public-authorities.html">
@@ -511,7 +512,7 @@
               <ul class="digital-list">
                 <li>
                   <span class="check-icon">
-                    <img src="assets/img/check.svg" alt="icon"/>
+                    <img src="assets/img/check.svg" alt="icon" />
                   </span>
                   <span>
                     Portable across on-prem, cloud & hybrid
@@ -519,7 +520,7 @@
                 </li>
                 <li>
                   <span class="check-icon">
-                    <img src="assets/img/check.svg" alt="icon"/>
+                    <img src="assets/img/check.svg" alt="icon" />
                   </span>
                   <span>
                     Sovereign by design (EU-first, vendor neutral)
@@ -527,7 +528,7 @@
                 </li>
                 <li>
                   <span class="check-icon">
-                    <img src="assets/img/check.svg" alt="icon"/>
+                    <img src="assets/img/check.svg" alt="icon" />
                   </span>
                   <span>
                     Enterprise-ready (security, compliance, automation)
@@ -1045,7 +1046,7 @@
               <div class="faq-item">
                 <button class="faq-question">
                   <span>
-                   Where is Codesphere based?
+                    Where is Codesphere based?
                   </span>
                 </button>
                 <div class="faq-answer">
@@ -1287,12 +1288,54 @@
 
   <!----------Back-to-Top------------->
   <a href="#" class="back-to-top">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
-          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15l7-7l7 7" />
-      </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="m5 15l7-7l7 7" />
+    </svg>
   </a>
 
   <!---------Vanilla Custom JS---------->
   <script src="assets/js/custom.js"></script>
+  <script>
+    /*=========Solutions Slider==========*/
+    const track = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.solution-slide');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    let currentSlide = 0;
+    const totalSlides = slides.length;
+    function updateSlider() {
+      track.style.transform =
+        `translateX(-${currentSlide * 100}%)`;
+      if (currentSlide === 0) {
+        prevBtn.classList.add('disabled');
+        prevBtn.disabled = true;
+      } else {
+        prevBtn.classList.remove('disabled');
+        prevBtn.disabled = false;
+      }
+      if (currentSlide === totalSlides - 1) {
+        nextBtn.classList.add('disabled');
+        nextBtn.disabled = true;
+      } else {
+        nextBtn.classList.remove('disabled');
+        nextBtn.disabled = false;
+      }
+    }
+    nextBtn.addEventListener('click', () => {
+      if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        updateSlider();
+      }
+    });
+    prevBtn.addEventListener('click', () => {
+      if (currentSlide > 0) {
+        currentSlide--;
+        updateSlider();
+      }
+    });
+    updateSlider();
+  </script>
 </body>
+
 </html>
