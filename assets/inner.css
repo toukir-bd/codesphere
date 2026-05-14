@@ -12,13 +12,13 @@ SME PAGE
     margin:0 auto;
 }
 
-.challenge-grid{
+.common-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:28px;
 }
 
-.challenge-card{
+.common-card{
     padding:42px 32px;
 }
 
@@ -1034,7 +1034,7 @@ RESPONSIVE
     display: block;
 }
 
-.testimonial-content {
+.testimonial-contents {
     padding: 40px;
     color: #fff;
 }
@@ -1047,7 +1047,7 @@ RESPONSIVE
     margin-bottom: 20px;
 }
 
-.testimonial-content p {
+.testimonial-contents p {
     font-size: 18px;
     line-height: 1.9;
     margin-bottom: 35px;
@@ -1351,7 +1351,6 @@ RESPONSIVE
 }
 
 @media (max-width: 575px) {
-
     .multi-cloud-section {
         padding: 70px 0 0;
     }
@@ -1381,6 +1380,551 @@ RESPONSIVE
     .cloud-card h4,
     .unified-card h4 {
         font-size: 17px;
+    }
+}
+
+
+.talent-hero,
+.indicator-section,
+.objection-section,
+.testimonial-section,
+.workflow-section,
+.workflow-indicator-section,
+.another-way-section,
+.reluctance-section,
+.big-picture-section {
+    padding: 120px 0;
+    background:#EDEFF5;
+}
+
+.talent-main{
+    width: 1050px;
+    max-width: 100%;
+}
+
+.indicator-section,
+.workflow-indicator-section{
+    background: #fff;
+}
+
+/* COUNTER */
+.talent-counter-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.counter-card {
+    background: transparent;
+    padding: 0;
+}
+
+.counter-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #7b4cf5;
+    margin-bottom: 25px;
+}
+
+.counter-number {
+    font-size: 80px;
+    line-height: 1;
+    color: #7b4cf5;
+    margin-bottom: 20px;
+}
+
+.counter-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #2f2f34;
+}
+
+/* OBJECTION */
+.objection-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.objection-card {
+    background: linear-gradient(90deg,#7b4cf5,#6f42eb);
+    padding: 35px;
+    color: #fff;
+}
+
+.objection-card h4 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.objection-card p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* TESTIMONIAL */
+.testimonial-box {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    background: #fff;
+    align-items: center;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-content {
+    padding: 50px;
+    position: relative;
+}
+
+.quote-icon {
+    font-size: 180px;
+    line-height: .7;
+    color: #7b4cf5;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    opacity: .9;
+}
+
+.testimonial-text {
+    font-size: 32px;
+    line-height: 1.5;
+    color: #252529;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial-content h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.testimonial-content span {
+    font-size: 15px;
+    color: #555;
+}
+
+/* WORKFLOW */
+.workflow-grid {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    gap: 60px;
+    align-items: center;
+}
+
+.workflow-image img {
+    width: 100%;
+}
+
+/* SOLUTIONS */
+.solution-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.solution-card h4,
+.purple-card h4,
+.big-picture-grid h4 {
+    color: #7b4cf5;
+    font-size: 18px;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.solution-card p,
+.purple-card p,
+.big-picture-grid p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #36363c;
+}
+
+.purple-card {
+    background: linear-gradient(90deg,#7b4cf5,#6f42eb);
+    color: #fff;
+    padding: 35px;
+}
+
+.purple-card h4,
+.purple-card p {
+    color: #fff;
+}
+
+/* BIG PICTURE */
+.big-picture-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE */
+@media (max-width:1200px){
+
+    .workflow-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width:991px){
+
+    .talent-page-section {
+        padding: 90px 0;
+    }
+
+    .talent-counter-grid,
+    .objection-grid,
+    .solution-grid,
+    .big-picture-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-box {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-content {
+        padding: 40px;
+    }
+
+    .quote-icon {
+        font-size: 120px;
+    }
+
+    .testimonial-text {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width:767px){
+
+    .talent-hero,
+    .indicator-section,
+    .objection-section,
+    .testimonial-section,
+    .workflow-section,
+    .workflow-indicator-section,
+    .another-way-section,
+    .reluctance-section,
+    .big-picture-section {
+        padding: 30px 0;
+    }
+
+    .counter-number {
+        font-size: 60px;
+    }
+
+    .testimonial-text {
+        font-size: 22px;
+    }
+
+    .quote-icon {
+        font-size: 100px;
+    }
+
+}
+
+@media (max-width:575px){
+
+    .talent-page-section {
+        padding: 70px 0;
+    }
+
+    .main-section {
+        padding: 0 20px;
+    }
+
+    .testimonial-content {
+        padding: 30px;
+    }
+
+    .testimonial-text {
+        font-size: 20px;
+    }
+
+    .quote-icon {
+        left: 20px;
+        top: 20px;
+    }
+
+    .counter-number {
+        font-size: 52px;
+    }
+
+}
+
+.bank-success-section {
+    background: #EDEFF5;
+    padding: 120px 0;
+}
+
+/* HERO */
+.bank-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 520px;
+    gap: 70px;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.bank-hero-image img {
+    width: 100%;
+    display: block;
+}
+
+/* TESTIMONIAL */
+.bank-testimonial {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    background: #fff;
+    margin-bottom: 140px;
+}
+
+.bank-person img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bank-quote-box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 70px;
+}
+
+.bank-quote-icon {
+    font-size: 220px;
+    line-height: .7;
+    color: #7b4cf5;
+    font-weight: 700;
+}
+
+.bank-quote-content p {
+    font-size: 34px;
+    line-height: 1.45;
+    color: #252529;
+    margin-bottom: 40px;
+}
+
+.bank-quote-content h5 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #252529;
+}
+
+.bank-quote-content span {
+    font-size: 14px;
+    color: #555;
+}
+
+/* COMMON SPACING */
+.airgapped-section,
+.application-section {
+    margin-bottom: 140px;
+}
+
+/* AIR GAPPED */
+.airgapped-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.air-card {
+    padding: 50px;
+}
+
+.air-card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 360px;
+}
+
+.air-card-image img {
+    max-width: 100%;
+}
+
+.air-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #2f2f34;
+}
+
+/* APPLICATION */
+.application-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.application-card {
+    padding: 45px;
+}
+
+.application-image {
+    margin-bottom: 35px;
+}
+
+.application-image img {
+    width: 100%;
+    display: block;
+}
+
+.application-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #2f2f34;
+}
+
+/* STRATEGIC */
+.strategic-second-desc {
+    margin-top: -10px;
+}
+
+.strategic-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.strategic-card {
+    padding: 40px 32px;
+}
+
+.strategic-icon {
+    margin-bottom: 30px;
+}
+
+.strategic-icon img {
+    width: 90px;
+    height: 90px;
+}
+
+.strategic-card h4 {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #7b4cf5;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.strategic-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #2f2f34;
+}
+
+/* RESPONSIVE */
+@media (max-width:1200px){
+
+    .bank-hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .strategic-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:991px){
+
+    .bank-success-section {
+        padding: 90px 0;
+    }
+
+    .bank-testimonial {
+        grid-template-columns: 1fr;
+    }
+
+    .bank-quote-box {
+        padding: 50px;
+    }
+
+    .bank-quote-content p {
+        font-size: 28px;
+    }
+
+    .airgapped-grid,
+    .application-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width:767px){
+
+    .bank-hero-grid,
+    .airgapped-section,
+    .application-section {
+        margin-bottom: 90px;
+    }
+
+    .bank-quote-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .bank-quote-icon {
+        font-size: 140px;
+    }
+
+    .bank-quote-content p {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .strategic-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width:575px){
+
+    .bank-success-section {
+        padding: 70px 0;
+    }
+
+    .main-section {
+        padding: 0 20px;
+    }
+
+    .bank-quote-box {
+        padding: 35px 25px;
+    }
+
+    .bank-quote-content p {
+        font-size: 20px;
+    }
+
+    .air-card,
+    .application-card,
+    .strategic-card {
+        padding: 30px 24px;
+    }
+
+    .air-card-image {
+        min-height: 220px;
     }
 
 }

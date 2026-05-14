@@ -123,13 +123,13 @@ p {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 0;
 }
 
 .nav-menu>a,
 .nav-item>a {
   display: flex;
-  padding: 38px 0;
+  padding: 38px 15px;
   font-size: 18px;
   font-weight: 500;
   align-items: center;
@@ -335,7 +335,19 @@ p {
 }
 
 .hero.faster-hero {
-	padding: 125px 0 220px;
+	padding: 100px 0 200px;
+}
+
+.hero.faster-hero .eyebrow {
+	margin-bottom: 15px;
+}
+
+.hero.faster-hero .digital-content .digital-desc {
+	margin-bottom: 25px;
+}
+
+.hero.faster-hero .digital-content .digital-list {
+	margin: 0 0 18px;
 }
 
 
