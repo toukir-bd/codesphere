@@ -1,52 +1,37 @@
-
 /*==================================================
  RESPONSIVE HEADER / MOBILE NAVBAR
 ==================================================*/
-
 .mobile-nav-buttons,
 .mobile-toggle,
 .mobile-close {
   display: none;
 }
-
 /*========DESKTOP===================*/
 @media(max-width:1365px) {
-
   .nav-menu>a,
   .nav-item>a {
     font-size: 16px;
     gap: 3px;
   }
-
   .nav-menu {
     gap: 20px;
   }
-
   .main-nav .nav-actions .btn {
     padding: 10px 20px;
     font-size: 16px;
   }
-
   .main-nav .nav-actions {
     gap: 15px;
   }
 }
-
-
-
 @media(min-width:1201px) {
-
   .nav-menu {
     display: flex !important;
     align-items: center;
   }
-
 }
-
 /*==============TABLET + MOBILE==============*/
-
 @media(max-width:1200px) {
-
   body.menu-open {
     overflow: hidden;
   }
@@ -54,36 +39,28 @@
   .hero {
     margin-top: 82px;
   }
-
   .navbar {
     height: 82px;
   }
-
   .main-nav {
     height: 82px;
-
     padding: 0 22px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
   .logo {
     position: relative;
     z-index: 9999999;
   }
-
   .logo img {
     height: 38px;
     width: auto;
   }
-
   /*==========HIDE DESKTOP ACTIONS=========*/
   .nav-actions {
     display: none !important;
   }
-
   /*===========MOBILE BUTTON WRAP=========*/
   .mobile-nav-buttons {
     width: 38px;
@@ -94,7 +71,6 @@
     justify-content: center;
     z-index: 9999999;
   }
-
   /*============TOGGLE==============*/
   .mobile-toggle {
     width: 38px;
@@ -110,18 +86,15 @@
     cursor: pointer;
     transition: .3s ease;
   }
-
   .mobile-toggle span {
     width: 100%;
     height: 2px;
     background: #252525;
     border-radius: 50px;
   }
-
   /*==============================
     CLOSE
     ==============================*/
-
   .mobile-close {
     width: 42px;
     height: 42px;
@@ -137,18 +110,15 @@
     visibility: hidden;
     transition: .3s ease;
   }
-
   /* active button states */
   body.menu-open .mobile-toggle {
     opacity: 0;
     visibility: hidden;
   }
-
   body.menu-open .mobile-close {
     opacity: 1;
     visibility: visible;
   }
-
   /*===========MOBILE MENU===============*/
   .nav-menu {
     position: fixed;
@@ -164,18 +134,15 @@
     padding: 0;
     transition: right .45s cubic-bezier(.77, 0, .18, 1);
   }
-
   .nav-menu.active {
     right: 0;
   }
-
   /*============NAV ITEM=============*/
   .nav-item {
     width: 100%;
     display: block;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
   }
-
   .nav-item>a {
     width: 100%;
     display: flex;
@@ -188,20 +155,16 @@
     color: #252525;
     position: relative;
   }
-
   .nav-item>a i {
     font-size: 18px;
     transition: transform .3s ease;
   }
-
   .nav-item.active>a {
     color: #764CF7;
   }
-
   .nav-item.active>a i {
     transform: rotate(180deg);
   }
-
   /*============MEGA MENU=============*/
   .nav-item .mega-menu {
     position: relative !important;
@@ -221,32 +184,26 @@
       max-height .45s cubic-bezier(.77, 0, .18, 1),
       padding .3s ease;
   }
-
   .nav-item.active .mega-menu {
     max-height: 4000px;
     padding-bottom: 26px;
   }
-
   /*=========GRID==========*/
-
   .nav-item .mega-menu .product-grid {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 0;
     row-gap: 28px;
   }
-
   /*======PRODUCT ITEM=========*/
   .nav-item .mega-menu .product-grid .product-item {
     display: block;
     min-height: auto;
   }
-
   /* hide icons mobile */
   .nav-item .mega-menu .product-grid .product-item span {
     display: none;
   }
-
   /* title */
   .nav-item .mega-menu .product-grid .product-item a h4 {
     font-size: 18px;
@@ -255,94 +212,72 @@
     margin-bottom: 8px;
     color: #252525;
   }
-
   /* description */
   .nav-item .mega-menu .product-grid .product-item p {
     font-size: 15px;
     line-height: 1.7;
     color: #666666;
   }
-
   /*========CHILD LINKS=========*/
-
   .mega-links {
     margin-top: 18px !important;
     padding: 0 !important;
   }
-
   .mega-links li {
     list-style: none;
     padding: 8px 0 !important;
   }
-
   .mega-links li a {
     font-size: 16px !important;
     line-height: 1.5;
   }
-
 }
-
 /*===========MOBILE============*/
 @media(max-width:767px) {
   .hero {
     margin-top: 78px;
   }
-
   .navbar {
     height: 78px;
   }
-
   .main-nav {
     height: 78px;
-
     padding: 0 18px;
   }
-
   .logo img {
     height: 34px;
   }
-
   /* mobile menu */
   .nav-menu {
     top: 78px;
     height: calc(100vh - 78px);
   }
-
   /* nav title */
   .nav-item>a {
     padding: 26px 18px;
     font-size: 22px;
   }
-
   /* mega menu */
   .nav-item .mega-menu {
     padding: 0 18px;
   }
-
   .nav-item.active .mega-menu {
     padding-bottom: 22px;
   }
-
   /* grid */
   .nav-item .mega-menu .product-grid {
     row-gap: 22px;
   }
-
   /* item title */
   .nav-item .mega-menu .product-grid .product-item a h4 {
     font-size: 17px;
   }
-
   /* item desc */
   .nav-item .mega-menu .product-grid .product-item p {
     font-size: 14px;
     line-height: 1.7;
   }
 }
-
-
-
-
 /*==================================================
            All Responsive
 ==================================================*/
@@ -350,58 +285,41 @@
   .carousel-btn.prev {
     left: -15px;
   }
-
   .carousel-btn.next {
     right: -15px;
   }
 }
-
 @media(max-width:1600px) {
   .hero {
     padding: 135px 0 250px;
   }
-
   .hero-inner h1 {
     font-size: 54px;
     line-height: 62px;
   }
-
   .card-section .cards {
     top: -110px;
   }
-
   .card-section .cards .card {
     min-height: 235px;
   }
-
   .digital-section .digital-wrapper .digital-image {
     min-height: 680px;
   }
-
   .digital-content.digiset {
     padding: 120px 36px 90px;
   }
-
-
-
 }
-
-
-
-
 @media(max-width:1400px) {
   .hero {
     padding: 125px 0 220px;
   }
-
   .hero-inner {
     padding: 0 28px;
   }
-
   .hero-inner>div {
     width: 78%;
   }
-
   .hero-inner h1 {
     width: 100%;
     max-width: 860px;
@@ -409,77 +327,60 @@
     line-height: 58px;
     letter-spacing: -1.2px;
   }
-
   .card-section .cards {
     gap: 28px;
-
     top: -100px;
-
     padding: 0 28px;
   }
-
   .card-section .cards .card {
     padding: 28px;
   }
-
   .card-section .cards .card h3 {
     font-size: 18px;
   }
-
   .card-section .cards .card p {
     font-size: 18px;
   }
-
   .main-section {
     padding: 0 28px;
   }
-
   .digital-content.digiset {
     padding: 90px 32px 70px;
   }
-
   .digital-content h2 {
     font-size: 34px;
   }
-
   .digital-content .digital-desc {
     font-size: 18px;
     line-height: 1.7;
   }
-
   .digital-content .digital-list li span:last-child {
     font-size: 18px;
   }
 }
-
 @media(max-width:1200px) {
   .hero {
     margin-top: 82px;
     padding: 120px 0 180px;
     background-position: center right 30%;
   }
-
   .hero-inner {
     grid-template-columns: 1fr;
     padding: 0 22px;
   }
-
   .hero-inner>div {
     width: 100%;
   }
-
   .hero-inner .eyebrow {
     font-size: 18px;
     margin-bottom: 28px;
   }
-
   .hero-inner h1 {
     max-width: 760px;
     font-size: 42px;
     line-height: 52px;
     letter-spacing: -1px;
   }
-
   .card-section .cards {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -489,136 +390,102 @@
   .card-section .cards.secure-card {
     grid-template-columns: repeat(2,1fr);
   }
-
   .card-section .cards .card {
     min-height: auto;
-
     padding: 28px;
   }
-
   .card-section .cards .card p {
     margin-bottom: 28px;
   }
-
   .digital-section {
     padding: 20px 0 110px;
   }
-
   .main-section {
     padding: 0 22px;
   }
-
   .digital-section .digital-wrapper {
     grid-template-columns: 1fr;
   }
-
   .digital-section .digital-wrapper .digital-image {
     min-height: 520px;
   }
-
   .digital-content.digiset {
     padding: 70px 30px;
   }
-
   .digital-content .digital-label {
     font-size: 18px;
-
     margin-bottom: 28px;
   }
-
   .digital-content h2 {
     font-size: 32px;
-
     margin-bottom: 30px;
   }
-
   .digital-content .digital-desc {
     margin-bottom: 32px;
   }
-
   .digital-content .digital-list {
     margin-bottom: 36px;
   }
-
 }
-
 @media(max-width:991px) {
   .hero {
     padding: 110px 0 140px;
     background-position: center right 35%;
   }
-
   .hero-inner h1 {
     max-width: 100%;
     font-size: 38px;
     line-height: 48px;
   }
-
   .card-section .cards {
     top: -70px;
   }
-
   .card-section .cards .card {
     padding: 26px;
   }
-
   .card-section .cards .card h3 {
     font-size: 17px;
   }
-
   .card-section .cards .card p {
     font-size: 17px;
     line-height: 1.6;
   }
-
   .card-section .cards .card strong {
     font-size: 15px;
   }
-
   .digital-section {
     padding: 20px 0 90px;
   }
-
   .digital-section .digital-wrapper .digital-image {
     min-height: 440px;
   }
-
   .digital-content.digiset {
     padding: 60px 26px;
   }
-
   .digital-content h2 {
     font-size: 28px;
     line-height: 1.3;
   }
-
   .digital-content .digital-desc {
     font-size: 17px;
   }
-
   .digital-content .digital-list li span:last-child {
     font-size: 17px;
   }
-
 }
-
 @media(max-width:768px) {
   .quote-mark img {
     width: 100px;
     margin: auto;
   }
-
   .virtual-cloud-section.secon-vr {
     padding: 10px 0 60px !important;
   }
-    
   .card-section .cards.secure-card,
   .card-section .cards.faster-card{
     grid-template-columns: repeat(1,1fr);
   }
-
 }
-
 @media(max-width:767px) {
   .hero {
     margin-top: 78px;
@@ -626,211 +493,151 @@
     background-position: center;
     background-size: cover;
   }
-
   .hero-inner {
     padding: 0 18px;
   }
-
   .hero-inner .eyebrow {
     font-size: 16px;
     margin-bottom: 24px;
   }
-
   .hero-inner h1 {
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -0.7px;
   }
-
   .card-section .cards {
     top: -55px;
-
     gap: 18px;
-
     padding: 0 18px;
   }
-
   .card-section .cards .card {
     padding: 24px 22px;
   }
-
   .card-section .cards .card h3 {
     font-size: 16px;
-
     margin-bottom: 10px;
   }
-
   .card-section .cards .card p {
     font-size: 16px;
     line-height: 1.65;
-
     margin-bottom: 24px;
   }
-
   .card-section .cards .card strong {
     font-size: 14px;
-
     gap: 10px;
   }
-
   .card-section .cards .card strong svg {
     width: 18px;
     height: 18px;
   }
-
-
   .digital-section {
     padding: 20px 0 70px;
   }
-
   .main-section {
     padding: 0 18px;
   }
-
   .digital-section .digital-wrapper .digital-image {
     min-height: 280px;
   }
-
   .digital-content.digiset {
     padding: 42px 22px;
   }
-
   .digital-content .digital-label {
     font-size: 15px;
-
     margin-bottom: 22px;
   }
-
   .digital-content h2 {
     font-size: 24px;
     line-height: 1.35;
-
     margin-bottom: 22px;
   }
-
   .digital-content .digital-desc {
     font-size: 15px;
     line-height: 1.8;
-
     margin-bottom: 28px;
   }
-
   .digital-content .digital-list {
     margin-bottom: 30px;
   }
-
   .digital-content .digital-list li {
     gap: 8px;
-
     margin-bottom: 12px;
   }
-
   .digital-content .digital-list li span:last-child {
     font-size: 15px;
     line-height: 1.7;
   }
-
   .digital-content .digital-list li .icon img {
     height: 16px;
   }
-
   .section-btn {
     width: 100%;
-
     justify-content: center;
-
     text-align: center;
-
     padding: 16px 20px;
-
     font-size: 14px;
     line-height: 1.5;
   }
-
   .section-btn span {
     font-size: 20px;
   }
-
-
 }
-
 @media(max-width:575px) {
   .hero {
     padding: 80px 0 95px;
   }
-
   .hero-inner h1 {
     font-size: 28px;
     line-height: 36px;
     letter-spacing: -0.5px;
   }
-
   .card-section .cards {
     top: -45px;
   }
-
   .card-section .cards .card {
     padding: 22px 20px;
   }
-
   .card-section .cards .card p {
     font-size: 15px;
   }
-
   .digital-content.digiset {
     padding: 38px 20px;
   }
-
   .digital-content h2 {
     font-size: 22px;
   }
 }
-
-
 @media(max-width:1200px) {
-
   .benefits-grid, .journey-grid{
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
-
 @media(max-width:991px) {
-
   .vc-why-grid {
     grid-template-columns: 1fr;
   }
-
   .vc-why-card {
     margin-top: 0;
   }
-
   .reason-grid {
     grid-template-columns: 1fr;
   }
-
 }
-
 @media(max-width:767px) {
-
   .vc-hero,
   .vc-why,
   .vc-benefits,
   .vc-reasons {
     padding: 80px 0 0;
   }
-
   .benefits-grid, .journey-grid {
     grid-template-columns: 1fr;
   }
-
   .benefit-card {
     min-height: auto;
   }
-
   .reason-block h3 {
     font-size: 20px;
     line-height: 1.4;
   }
-
 }
