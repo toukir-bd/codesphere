@@ -482,9 +482,16 @@ p {
   transition: 0.25s ease;
   text-transform: uppercase;
 }
+.section-btn.gray{
+  background: #adb3cf;
+}
 .section-btn:hover {
   transform: translateY(-2px);
   background: #6f42eb;
+}
+.section-btn.gray:hover {
+  transform: translateY(-2px);
+  background: #A0A6C2;
 }
 .section-btn span {
   transition: 0.25s ease;
