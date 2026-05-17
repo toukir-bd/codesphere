@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/favicon.png" sizes="32x32">
+    <title>Virtual Machines - codesphere</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/inner.css" />
+    <link rel="stylesheet" href="assets/responsive.css" />
+</head>
+<body>
+    <!-----------Top Navbar---------->
+    <header class="navbar">
+        <div class="container-wrap">
+            <div class="main-nav">
+                <a class="logo" href="index.html">
+                    <img src="assets/img/logo.svg" alt="logo" />
+                </a>
+                <div class="mobile-nav-buttons">
+                    <button class="mobile-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="mobile-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 50 50">
+                            <path fill="#1d1d1d" d="m37.304 11.282l1.414 1.414l-26.022 26.02l-1.414-1.413z" />
+                            <path fill="#1d1d1d" d="m12.696 11.282l26.022 26.02l-1.414 1.415l-26.022-26.02z" />
+                        </svg>
+                    </button>
+                </div>
+                <nav class="nav-menu">
+                    <div class="nav-item">
+                        <a href="#">
+                            Why Codesphere
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="4" d="M36 18L24 30L12 18" />
+                            </svg>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="product-grid">
+                                <div class="product-item">
+                                    <span><img src="assets/img/why/w-1.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="virtual-cloud.html">
+                                            <h4>Virtual Cloud</h4>
+                                        </a>
+                                        <p>Core architecture and technical features of our Virtual Cloud</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/why/w-2.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="digital-sovereignty.html">
+                                            <h4>Digital Sovereignty</h4>
+                                        </a>
+                                        <p>Achieve digital sovereignty and independence from cloud providers</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/why/w-3.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="security-compliance.html">
+                                            <h4>Security & Compliance</h4>
+                                        </a>
+                                        <p>Security safeguards, including certifications and compliance details</p>
+                                    </div>
+                                </div>
+                                <div class="product-item has-links">
+                                    <span><img src="assets/img/why/w-4.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href=#>
+                                            <h4>Sectors</h4>
+                                        </a>
+                                        <p>Discover how organizations across various industries use our platform for
+                                            their specific needs</p>
+                                        <ul class="mega-links">
+                                            <li>
+                                                <a class="active-link" href="public-authorities.html">
+                                                    Public Authorities
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="enterprises.html">
+                                                    Enterprises
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="sme.html">
+                                                    SME
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#">
+                            Products
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="4" d="M36 18L24 30L12 18" />
+                            </svg>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="product-grid">
+                                <div class="product-item">
+                                    <span><img src="assets/img/products/p-1.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="compute-runtimes.html">
+                                            <h4>Compute & Runtimes</h4>
+                                        </a>
+                                        <p>Flexible. Unified. Production–Ready.</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/products/p-2.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="storage-databases.html">
+                                            <h4>Storage & Databases</h4>
+                                        </a>
+                                        <p>Flexible, sovereign, and production–ready</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/products/p-3.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="messaging.html">
+                                            <h4>Messaging</h4>
+                                        </a>
+                                        <p>Modern applications require robust messaging</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/products/p-4.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="confidential-airgapped.html">
+                                            <h4>Confidential & Airgapped</h4>
+                                        </a>
+                                        <p>Maximum data sovereignty for regulated environments</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/products/p-5.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="network.html">
+                                            <h4>Network</h4>
+                                        </a>
+                                        <p>Complex, critical – and often underestimated</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/products/p-6.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="infrastructure-as-code.html">
+                                            <h4>Infrastructure as Code</h4>
+                                        </a>
+                                        <p>Automated, sovereign, scalable</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/products/p-7.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="iam-security.html">
+                                            <h4>IAM & Security</h4>
+                                        </a>
+                                        <p>Managing identities, eliminating vulnerabilities</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/products/p-8.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="data-ai.html">
+                                            <h4>Data & AI</h4>
+                                        </a>
+                                        <p>From the data pipeline to the production model</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/products/p-9.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="logging-monitoring.html">
+                                            <h4>Logging & Monitoring</h4>
+                                        </a>
+                                        <p>Full observability from the first commit to production</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/products/p-10.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="developer-platform.html">
+                                            <h4>Developer Platform</h4>
+                                        </a>
+                                        <p>The developer platform for modern software teams</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/products/p-11.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="finops-tools.html">
+                                            <h4>FinOps Tools</h4>
+                                        </a>
+                                        <p>Keeping infrastructure costs under control – from the start</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/products/p-12.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="operator-tools.html">
+                                            <h4>Operator Tools</h4>
+                                        </a>
+                                        <p>Full control, everywhere</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/products/p-13.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="marketplace.html">
+                                            <h4>Marketplace</h4>
+                                        </a>
+                                        <p>An ecosystem for all stakeholders</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#">
+                            Solutions
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="4" d="M36 18L24 30L12 18" />
+                            </svg>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="product-grid">
+                                <div class="product-item">
+                                    <span><img src="assets/img/solutions/s-1.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="faster-legacy-migrations.html">
+                                            <h4>Faster legacy migrations</h4>
+                                        </a>
+                                        <p>Modernizing and migrating legacy applications</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/solutions/s-2.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="eliminate-lockin-infrastructure.html">
+                                            <h4>Eliminate lock-in infrastructure</h4>
+                                        </a>
+                                        <p>Gain independence from hyperscalers and full control over your stack</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/solutions/s-3.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="empowering-it-teams.html">
+                                            <h4>Empowering IT-Teams</h4>
+                                        </a>
+                                        <p>Reduce operational overhead so your engineering teams can focus on building
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/solutions/s-4.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="it-innovation-speed.html">
+                                            <h4>IT innovation at record speed</h4>
+                                        </a>
+                                        <p>Accelerate your deployment cycles and improve time-to-market</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#">
+                            Resources
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 48 48">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="4" d="M36 18L24 30L12 18" />
+                            </svg>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="product-grid">
+                                <div class="product-item">
+                                    <span><img src="assets/img/resources/r-1.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="company-people.html">
+                                            <h4>Company & People</h4>
+                                        </a>
+                                        <p>Our mission, the team behind Codesphere and open roles</p>
+                                    </div>
+                                </div>
+                                <div class="product-item has-links">
+                                    <span><img src="assets/img/resources/r-2.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href=digital-sovereignty.html>
+                                            <h4>Technology</h4>
+                                        </a>
+                                        <p>
+                                            Technical details, core architecture and capabilities of our platform
+                                        </p>
+                                        <ul class="mega-links">
+                                            <li>
+                                                <a href="core-technology.html">
+                                                    Core Technology
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="remote-development.html">
+                                                    Remote development
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="ai-building-blocks.html">
+                                                    AI building blocks
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="cost-control.html">
+                                                    Cost control
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="virtual-machines.html">
+                                                    Virtual machines
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/resources/r-3.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="https://docs.codesphere.com/intro" target="_blank">
+                                            <h4>Documentation</h4>
+                                        </a>
+                                        <p>Developer guides, API references, and tutorials to get started</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <span><img src="assets/img/resources/r-4.svg" alt="icon" /></span>
+                                    <div>
+                                        <a href="blog.html">
+                                            <h4>Blog</h4>
+                                        </a>
+                                        <p>Latest product updates, industry insights and engineering deep-dives</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="nav-actions">
+                    <a class="btn sign" href="https://codesphere.com/ide/signIn" target="_blank">SIGN-IN</a>
+                    <a class="btn demo" href="#">
+                        REQUEST DEMO
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="22" width="22">
+                            <path fill="rgb(255,255,255)"
+                                d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="smooth-scroll">
+        <!----------Hero Section------------>
+        <main class="hero secure-hero hero1">
+            <div class="container-wrap">
+                <div class="hero-inner">
+                    <div class="digital-content">
+                        <div class="eyebrow">Virtual Machines on Codesphere</div>
+                        <h1 style="margin-bottom:15px">
+                            Lift & shift legacy monoliths
+                        </h1>
+                        <p class="digital-desc">
+                            Transition to cloud-native from your legacy applications (including Windows workloads)
+                            easier, without worrying about
+                            containerization. Gain advanced routing, remote desktop support, and integrated
+                            observability & tooling across any
+                            infrastructure.
+                        </p>
+                        <a href="#" class="section-btn" style="background:#292929; margin-bottom:15px">
+                            Explore use case example
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="22" width="22">
+                                    <path fill="rgb(255,255,255)"
+                                        d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="#" class="section-btn">
+                            Get in touch
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="22" width="22">
+                                    <path fill="rgb(255,255,255)"
+                                        d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="card-section secure">
+            <div class="container-wrap">
+                <div class="cards secure-card">
+                    <a class="card purple" href="#">
+                        <p>Migration path</p>
+                        <strong>
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="22" width="22">
+                                <path fill="rgb(255,255,255)"
+                                    d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z">
+                                </path>
+                            </svg>
+                        </strong>
+                    </a>
+                    <a class="card purple" href="#">
+                        <p>Key benefits</p>
+                        <strong>
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="22" width="22">
+                                <path fill="rgb(255,255,255)"
+                                    d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z">
+                                </path>
+                            </svg>
+                        </strong>
+                    </a>
+                    <a class="card purple" href="#">
+                        <p>Unified management</p>
+                        <strong>
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="22" width="22">
+                                <path fill="rgb(255,255,255)"
+                                    d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z">
+                                </path>
+                            </svg>
+                        </strong>
+                    </a>
+                    <a class="card purple" href="#">
+                        <p>Digital sovereignty</p>
+                        <strong>
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="22" width="22">
+                                <path fill="rgb(255,255,255)"
+                                    d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z">
+                                </path>
+                            </svg>
+                        </strong>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="migration-path-section">
+            <div class="container-wrap">
+                <div class="main-section">
+                    <!-- CONTENT -->
+                    <div class="digital-content">
+                        <span class="digital-label">
+                            FUTURE PROOF YOUR WORKLOADS
+                        </span>
+                        <h2>
+                            Migration path
+                        </h2>
+                        <p class="digital-desc">
+                            Transform your VM monoliths into cloud-ready microservices with our proven migration path.
+                            Move VM workloads (including those running Windows) to Codesphere and directly benefit from
+                            modern cloud-native architecture. Then, gradually break down your monoliths into
+                            microservices without the need for complex containerization processes.
+                        </p>
+                    </div>
+                    <!-- STEP 1 -->
+                    <div class="migration-step-card">
+                        <div class="migration-step-number">
+                            1
+                        </div>
+                        <div class="migration-step-content">
+                            <h3>
+                                LIFT & SHIFT LEGACY APPLICATIONS
+                            </h3>
+                            <p>
+                                Move your existing monoliths to Codesphere VMs without major code changes. Get immediate
+                                access to cloud infrastructure benefits.
+                            </p>
+                            <h4>
+                                Immediate benefits:
+                            </h4>
+                            <ul class="digital-list">
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Advanced cloud-native routing features</span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Remote desktop support for easy access</span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Infrastructure portability across any cloud</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- SPACE -->
+                    <div class="migration-space"></div>
+                    <!-- STEP 2 -->
+                    <div class="migration-step-card">
+                        <div class="migration-step-number">
+                            2
+                        </div>
+                        <div class="migration-step-content">
+                            <h3>
+                                UNIFIED MANAGEMENT INTERFACE
+                            </h3>
+                            <p>
+                                Manage your legacy and Windows VM workloads alongside microservice and applications on
+                                its way microservice architectures in a single, unified interface. A single context with
+                                management tools.
+                            </p>
+                            <h4>
+                                Unified control:
+                            </h4>
+                            <ul class="digital-list">
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Single dashboard for all workload types</span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Consistent deployment patterns</span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Centralized monitoring and logging</span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Shared networking and security policies</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- SPACE -->
+                    <div class="migration-space"></div>
+                    <!-- STEP 3 -->
+                    <div class="migration-step-card">
+                        <div class="migration-step-number">
+                            3
+                        </div>
+                        <div class="migration-step-content">
+                            <h3>
+                                BREAK DOWN MONOLITH
+                            </h3>
+                            <p>
+                                Gradually extract services from your monolith into cloud-ready microservices using our
+                                patented deployment technology. Deploy new services in a glimpse while Codesphere takes
+                                care for containerization and container orchestration.
+                            </p>
+                            <h4>
+                                Decomposition strategy:
+                            </h4>
+                            <ul class="digital-list">
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Extract business logic into new services</span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Maintain data consistency during transition</span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Gradually start routing requests to new services</span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Progressive modernization approach</span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Risk-free rollback capabilities</span>
+                                </li>
+                            </ul>
+                            <h4 class="deployment-title">
+                                Deployment advantages:
+                            </h4>
+                            <ul class="digital-list">
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Direct code-to-cloud deployment</span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Simplified debugging and development</span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Better resource utilization</span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="check" style="width:16px" />
+                                    </span>
+                                    <span>Faster deployment cycles</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- BOTTOM CTA -->
+                    <div class="migration-bottom-banner">
+                        <div class="migration-banner-icon">
+                            <img src="assets/img/tech/mcro.png" alt="mcro">
+                        </div>
+                        <div class="migration-banner-content">
+                            <h3>
+                                CLOUD-NATIVE MICROSERVICE LANDSCAPE
+                            </h3>
+                            <p>
+                                Achieve a modern, scalable architecture with full cloud-native capabilities while
+                                maintaining the flexibility to run legacy components when needed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="public-sector-section">
+            <div class="container-wrap">
+                <div class="main-section">
+                    <!-- SECTION HEADING -->
+                    <div class="digital-content public-heading">
+                        <span class="digital-label">
+                            Exciting capabilities
+                        </span>
+                        <h2>
+                            Key benefits of Codesphere VMs
+                        </h2>
+                        <p class="digital-desc">
+                            Get enterprise-grade cloud-native features for your legacy applications without the
+                            complexity of traditional migration approaches.
+                        </p>
+                        <!-- TOP CARDS -->
+                    </div>
+                    <div class="digital-content">
+                        <div class="public-grid">
+                            <div class="digital-card public-card">
+                                <div class="public-icon text-center">
+                                    <img src="assets/img/tech/tr-1.svg" alt="">
+                                </div>
+                                <span class="digital-label">Advanced cloud-native routing</span>
+                                <p>
+                                    Get instant access to sophisticated routing capabilities including load balancing,
+                                    SSL termination,
+                                    and path-based routing for your monolith applications.
+                                </p>
+                            </div>
+                            <div class="digital-card public-card">
+                                <div class="public-icon text-center">
+                                    <img src="assets/img/tech/tr-2.svg" alt="">
+                                </div>
+                                <span class="digital-label">Integrated remote desktop</span>
+                                <p>
+                                    Built-in remote desktop support allows seamless access to your VM applications from
+                                    anywhere, with
+                                    enterprise-grade security and performance.
+                                </p>
+                            </div>
+                            <div class="digital-card public-card">
+                                <div class="public-icon text-center">
+                                    <img src="assets/img/tech/tr-3.svg" alt="">
+                                </div>
+                                <span class="digital-label">Faster migration path</span>
+                                <p>
+                                    Accelerate your migration timeline with streamlined lift-and-shift processes that
+                                    minimize downtime and
+                                    reduce complexity compared to traditional approaches.
+                                </p>
+                            </div>
+                            <div class="digital-card public-card">
+                                <div class="public-icon text-center">
+                                    <img src="assets/img/tech/tr-4.svg" alt="">
+                                </div>
+                                <span class="digital-label">Infrastructure portability</span>
+                                <p>
+                                    Deploy on any infrastructure – cloud, on-premises, or hybrid environments – with the
+                                    same management interface and feature set.
+                                </p>
+                            </div>
+                            <div class="digital-card public-card">
+                                <div class="public-icon text-center">
+                                    <img src="assets/img/tech/tr-5.svg" alt="">
+                                </div>
+                                <span class="digital-label">Single management interface</span>
+                                <p>
+                                    Manage legacy applications alongside modern cloud-native workloads in one unified
+                                    platform with consistent best-practice workflows.
+                                </p>
+                            </div>
+                            <div class="digital-card public-card">
+                                <div class="public-icon text-center">
+                                    <img src="assets/img/tech/tr-6.svg" alt="">
+                                </div>
+                                <span class="digital-label">Containerization included</span>
+                                <p>
+                                    Move directly to modern deployment patterns while Codesphere runs legacy
+                                    applications without prior containerization
+                                    alongside modern microservices.
+                                </p>
+                            </div>
+                            <div class="digital-card public-card">
+                                <div class="public-icon text-center">
+                                    <img src="assets/img/tech/tr-7.svg" alt="">
+                                </div>
+                                <span class="digital-label">Dramatic cost reduction</span>
+                                <p>
+                                    Substantial savings on annual licensing costs compared to traditional VMware
+                                    deployments with no vendor lock-in.
+                                </p>
+                                <div class="img-boxer" style="margin-top:30px;">
+                                    <img src="assets/img/tech/cco.png" alt="image" style="width:100%" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vc-journey" style="padding-top:0">
+            <div class="container-wrap">
+                <div class="main-section">
+                    <div class="digital-content">
+                        <span class="digital-label">
+                            One platform for everything
+                        </span>
+                        <h2>
+                            Unified management interface
+                        </h2>
+                        <p class="digital-desc">
+                            Stop juggling multiple tools and platforms. Manage your entire application portfolio – from
+                            legacy monoliths to
+                            modern cloud-native microservices – in a single, unified interface. All applications get
+                            access to Codesphere’s
+                            extensive toolkit including our remote development environment, observability features and
+                            more.
+                        </p>
+                        <div class="journey-grid">
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/tech/tr-8.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">Legacy applications</span>
+                                    <p class="digital-desc mb-0">
+                                        Existing monolithic applications running in VMs
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <!-- <img src="assets/img/tech/tr-9.svg" alt="stack"> -->
+                                    </div>
+                                    <span class="digital-label mb-0 text-center">Unified In</span>
+                                    <p class="digital-desc mb-0">
+                                        <!-- Pair-program with your team in real-time, directly within the Codesphere Web IDE. -->
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/tech/tr-10.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">Modern cloud-native services</span>
+                                    <p class="digital-desc mb-0">
+                                        New microservices and cloud-native applications
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="public-sector-section">
+            <div class="container-wrap">
+                <div class="main-section">
+                    <!-- SECTION HEADING -->
+                    <div class="digital-content text-center">
+                        <h2 class="text=center">
+                            Single source of truth
+                        </h2>
+                        <!-- TOP CARDS -->
+                    </div>
+                    <div class="digital-content">
+                        <div class="public-grid">
+                            <div class="digital-card public-card">
+                                <div class="public-icon text-center">
+                                    <img src="assets/img/tech/st-1.svg" alt="">
+                                </div>
+                                <span class="digital-label">Monitoring</span>
+                                <p>
+                                    Unified metrics and alerts
+                                </p>
+                            </div>
+                            <div class="digital-card public-card">
+                                <div class="public-icon text-center">
+                                    <img src="assets/img/tech/st-2.svg" alt="">
+                                </div>
+                                <span class="digital-label">Deployment</span>
+                                <p>
+                                    Consistent deployment flows
+                                </p>
+                            </div>
+                            <div class="digital-card public-card">
+                                <div class="public-icon text-center">
+                                    <img src="assets/img/tech/st-3.svg" alt="">
+                                </div>
+                                <span class="digital-label">Security</span>
+                                <p>
+                                    Shared security policies
+                                </p>
+                            </div>
+                            <div class="digital-card public-card">
+                                <div class="public-icon text-center">
+                                    <img src="assets/img/tech/st-4.svg" alt="">
+                                </div>
+                                <span class="digital-label">Scaling</span>
+                                <p>
+                                    Coordinated resource management
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vm-access-section">
+            <div class="container-wrap">
+                <div class="main-section">
+                    <!-- HEADING -->
+                    <div class="digital-content text-center">
+                        <h2>
+                            Manage VMs alongside other workloads with multiple access methods
+                        </h2>
+                    </div>
+                    <!-- TOP IMAGES -->
+                    <div class="vm-top-grid">
+                        <div class="vm-top-card large-card">
+                            <img src="assets/img/tech/pp-1.webp" alt="">
+                        </div>
+                        <div class="vm-top-card small-card">
+                            <img src="assets/img/tech/pp-2.webp" alt="">
+                        </div>
+                    </div>
+                    <!-- BOTTOM CONTENT -->
+                    <div class="vm-bottom-grid">
+                        <!-- CARD -->
+                        <div class="vm-feature-card">
+                            <div class="vm-feature-image">
+                                <img src="assets/img/tech/pp-3.webp" alt="">
+                            </div>
+                            <div class="digital-content">
+                                <span class="digital-label">
+                                    BUILT-IN REMOTE CONNECTION
+                                </span>
+                                <p class="digital-desc">
+                                    Access your Windows & Linux VMs directly through our integrated remote desktop/cli
+                                    connection. No additional software required – connect seamlessly through your browser or
+                                    terminal with enterprise-grade security.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- CARD -->
+                        <div class="vm-feature-card">
+                            <div class="vm-feature-image">
+                                <img src="assets/img/tech/pp-4.webp" alt="">
+                            </div>
+                            <div class="digital-content">
+                                <span class="digital-label">
+                                    CLOUD IDE & LOCAL IDE CONNECTIONS
+                                </span>
+                                <p class="digital-desc">
+                                    Develop and manage your applications using Codesphere’s cloud IDE or connect your
+                                    favorite local IDE via SSH. Enjoy real-time collaboration, AI assistance, and seamless
+                                    deployment capabilities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="public-sector-section">
+            <div class="container-wrap">
+                <div class="main-section">
+                    <!-- SECTION HEADING -->
+                    <div class="digital-content public-heading">
+                        <span class="digital-label">
+                            Infrastructure independence
+                        </span>
+                        <h2>
+                            Digital sovereignty & portability
+                        </h2>
+                        <p class="digital-desc">
+                            Maintain complete control over your infrastructure choices. Our VM solution runs on any underlying infrastructure – from public 
+                            clouds to on-premises data centers – giving you the freedom to choose based on your 
+                            sovereignty, compliance, and business requirements.
+                        </p>
+                        <!-- TOP CARDS -->
+                    </div>
+                    <div class="digital-content">
+                        <div class="public-grid">
+                            <div class="digital-card public-card">
+                                <span class="digital-label">Infrastructure agnostic</span>
+                                <p>
+                                    Deploy on AWS, Azure, GCP, on-premises, or hybrid environments with identical functionality.
+                                </p>
+                            </div>
+                            <div class="digital-card public-card">
+                                <span class="digital-label">Avoid vendor lock-in</span>
+                                <p>
+                                    Move between infrastructure providers without application changes or feature loss.
+                                </p>
+                            </div>
+                            <div class="digital-card public-card">
+                                <span class="digital-label">Compliance ready</span>
+                                <p>
+                                    Meet regulatory requirements by choosing compliant infrastructure while maintaining modern capabilities.
+                                </p>
+                            </div>
+                            <div class="digital-card public-card">
+                                <span class="digital-label">Cost optimization</span>
+                                <p>
+                                    Optimize costs by running workloads on the most cost-effective infrastructure for your use case.
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#" class="section-btn" style="margin-top:40px">
+                            Learn about digital sovereignty
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" height="22" width="22">
+                                    <path fill="rgb(255,255,255)" d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------Footer------------->
+        <footer class="site-footer">
+            <div class="container-wrap">
+                <div class="main-footer">
+                    <div class="footer-grid">
+                        <div class="footer-col footer-company">
+                            <h4>Codesphere GmbH</h4>
+                            <p>
+                                Karlsruhe<br />
+                                Zur Gießerei 6-8,<br />
+                                76227 Karlsruhe-Durlach
+                            </p>
+                            <p>
+                                Munich<br />
+                                Implerstraße 25a,<br />
+                                81371 München
+                            </p>
+                            <p>
+                                Berlin<br />
+                                Max-Urich-Straße 3,<br />
+                                13355 Berlin
+                            </p>
+                            <div class="footer-logo">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="footer-col footer-contact">
+                            <h4>Contact</h4>
+                            <a href="mailto:team@codesphere.com">team@codesphere.com</a>
+                            <h4 class="support-title">Support</h4>
+                            <a href="mailto:support@codesphere.com">support@codesphere.com</a>
+                            <div class="social-links">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="#fff"
+                                            d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 64 64">
+                                        <path fill="#fff"
+                                            d="M32 0C14 0 0 14 0 32c0 21 19 30 22 30c2 0 2-1 2-2v-5c-7 2-10-2-11-5c0 0 0-1-2-3c-1-1-5-3-1-3c3 0 5 4 5 4c3 4 7 3 9 2c0-2 2-4 2-4c-8-1-14-4-14-15q0-6 3-9s-2-4 0-9c0 0 5 0 9 4c3-2 13-2 16 0c4-4 9-4 9-4c2 7 0 9 0 9q3 3 3 9c0 11-7 14-14 15c1 1 2 3 2 6v8c0 1 0 2 2 2c3 0 22-9 22-30C64 14 50 0 32 0" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                                        <path fill="#fff"
+                                            d="m9.237 7.004l4.84-5.505H12.93L8.727 6.28L5.371 1.5H1.5l5.075 7.228L1.5 14.499h1.147l4.437-5.047l3.545 5.047H14.5zM7.666 8.791l-.514-.72L3.06 2.344h1.762l3.302 4.622l.514.72l4.292 6.007h-1.761z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Solutions</h4>
+                            <ul>
+                                <li><a href="faster-legacy-migrations.html">Faster legacy migrations</a></li>
+                                <li><a href="eliminate-lockin-infrastructure.html">Eliminate lock-in infrastructure</a>
+                                </li>
+                                <li><a href="empowering-it-teams.html">Empowering IT-Teams</a></li>
+                                <li><a href="it-innovation-speed.html">IT innovation at record speed</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Products</h4>
+                            <ul>
+                                <li><a href="compute-runtimes.html">Compute & Runtimes</a></li>
+                                <li><a href="storage-databases.html">Storage & Databases</a></li>
+                                <li><a href="messaging.html">Messaging</a></li>
+                                <li><a href="confidential-airgapped.html">Confidential & Airgapped</a></li>
+                                <li><a href="network.html">Network</a></li>
+                                <li><a href="infrastructure-as-code.html">Infrastructure as Code</a></li>
+                                <li><a href="iam-security.html">IAM & Security</a></li>
+                                <li><a href="data-ai.html">Data & AI</a></li>
+                                <li><a href="logging-monitoring.html">Logging & Monitoring</a></li>
+                                <li><a href="developer-platform.html">Developer Platform</a></li>
+                                <li><a href="finops-tools.html">FinOps Tools</a></li>
+                                <li><a href="operator-tools.html">Operator Tools</a></li>
+                                <li><a href="marketplace.html">Marketplace</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Technology</h4>
+                            <ul>
+                                <li><a href="core-technology.html">Core Technology</a></li>
+                                <li><a href="remote-development.html">Remote development</a></li>
+                                <li><a href="ai-building-blocks.html">AI building blocks</a></li>
+                                <li><a href="cost-control.html">Cost control</a></li>
+                                <li><a href="virtual-machines.html">Virtual machines</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>© 2026 codesphere. All rights reserved</p>
+                        <ul>
+                            <li><a href="imprint.html">Imprint</a></li>
+                            <li><a href="accessibility.html">Accessibility</a></li>
+                            <li><a href="copyright.html">Copyright</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-of-service.html">Terms of Service</a></li>
+                            <li><a href="service-level-agreement.html">Service Level Agreement</a></li>
+                            <li><a href="acceptable-use-policy.html">Acceptable Use Policy</a></li>
+                            <li><a href="cookie-settings.html">Cookie Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!----------Back-to-Top------------->
+    <a href="#" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m5 15l7-7l7 7" />
+        </svg>
+    </a>
+    <!---------Vanilla Custom JS---------->
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

@@ -270,6 +270,9 @@ p {
   letter-spacing: 0;
   text-transform:uppercase;
 }
+.product-hero{
+  padding:145px 0 135px;
+}
 .hero-inner h1 {
   font-size: 60px;
   line-height: 68px;
@@ -415,6 +418,7 @@ p {
   color: #7b4cf5;
   margin-bottom: 38px;
   text-transform: uppercase;
+  display:table;
 }
 .digital-content h2 {
   font-size: 40px;
@@ -1561,11 +1565,18 @@ Inner Pages
   grid-template-columns: repeat(3, 1fr);
   gap: 36px;
 }
+.benefits-four-grid{
+  grid-template-columns: repeat(4, 1fr);
+}
 .benefit-card {
-  background: #7749ef;
+  background: #7a4eeb;
   padding: 36px;
   color: #fff;
   border-radius:5px;
+  transition:all 0.3s ease-in-out;
+}
+.benefit-card:hover {
+  background: #6E43DE;
 }
 .benefit-card img {
   width: 100px;
@@ -1573,11 +1584,12 @@ Inner Pages
   display:flex;
 }
 .benefit-card h3 {
-  font-size: 20px;
-  line-height: 1.4;
-  color: #fff;
-  margin-bottom: 16px;
-  font-weight: 600;
+	font-size: 20px;
+	line-height: 1.4;
+	color: #fff;
+	margin-bottom: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 .benefit-card p {
   font-size: 20px;
