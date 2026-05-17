@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/img/favicon.png" sizes="32x32">
-    <title>Infrastructure as Code - codesphere</title>
+    <title>Developer Platform - codesphere</title>
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/inner.css" />
     <link rel="stylesheet" href="assets/responsive.css" />
@@ -374,23 +374,23 @@
 
     <div class="smooth-scroll">
         <!----------Hero Section------------>
-        <main class="hero hero1 product-hero">
+        <main class="hero hero1 product-hero except-hero">
             <div class="container-wrap">
                 <div class="hero-inner">
                     <div class="digital-content">
                         <div class="hero-icon">
-                            <img src="assets/img/product/mi-6.svg" alt="main-product"/>
+                            <img src="assets/img/product/mi-10.svg" alt="main-product"/>
                         </div>
-                        <div class="eyebrow">Infrastructure-as-Code with Codesphere: Automated, sovereign, scalable</div>
+                        <div class="eyebrow">Developer Platform</div>
                         <h1 style="margin-bottom:15px">
-                            Why IaC is indispensable in modern infrastructures.
+                            The developer platform for modern software teams
                         </h1>
                         <p class="digital-desc">
-                            Infrastructure-as-Code (IaC) has established itself as the standard for managing complex cloud and hybrid 
-                            environments. Instead of configuring infrastructure manually – also known as “ClickOps” – resources are 
-                            described declaratively in versioned configuration files. Tools like Terraform translate API calls into 
-                            reproducible, versionable infrastructure states, enabling consistent deployments across multiple providers 
-                            and regions.
+                            Modern software development is complex: development teams are distributed, technology stacks are growing, 
+                            compliance requirements are increasing – and yet code is expected to reach production faster than ever. A 
+                            fragmented tool landscape of local development environments, separate CI/CD systems, different IDEs, and 
+                            various Git hosting solutions costs teams valuable hours every day. The result: slow release cycles, 
+                            inconsistent developer environments, and high operational overhead.
                         </p>
                     </div>
                 </div>
@@ -403,10 +403,10 @@
                     <!-- SECTION HEADING -->
                     <div class="digital-content">
                         <span class="digital-label">
-                            The challenges in practice
+                            The typical challenges in practice 
                         </span>
                         <h2>
-                            In enterprise environments, however, it quickly becomes clear where traditional IaC approaches reach their limits
+                            The biggest hurdles in productive AI operations 
                         </h2>
                         <!-- <p class="digital-desc">
                             Many companies reach operational and security limits when managing their network infrastructure:
@@ -417,43 +417,38 @@
                         <div class="public-grid">
                             <div class="digital-card public-card">
                                 <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-25.svg" alt="">
+                                    <img src="assets/img/product/c-42.svg" alt="">
                                 </div>
-                                <span class="digital-label">State management & drift</span>
+                                <span class="digital-label">Inconsistent setup</span>
                                 <p>
-                                    Terraform state files must be kept secure and consistent. Parallel operations and manual changes via 
-                                    console or CLI lead to drift and hard-to-trace inconsistencies between the desired and actual 
-                                    infrastructure state.
+                                    “Works on my machine” issues due to diverging local environments.
                                 </p>
                             </div>
                             <div class="digital-card public-card">
                                 <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-26.svg" alt="">
+                                    <img src="assets/img/product/c-43.svg" alt="">
                                 </div>
-                                <span class="digital-label">Kubernetes complexity</span>
+                                <span class="digital-label">Tool Silos</span>
                                 <p>
-                                    Abstraction via Helm charts and Kubernetes clusters requires deep expertise and blocks teams without 
-                                    specialized DevOps resources.
+                                    CI/CD, code review, Git hosting, and IDEs as separate systems that are difficult to integrate.
                                 </p>
                             </div>
                             <div class="digital-card public-card">
                                 <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-27.svg" alt="">
+                                    <img src="assets/img/product/c-44.svg" alt="">
                                 </div>
-                                <span class="digital-label">Multi-service coordination</span>
+                                <span class="digital-label">Lack of preview environments</span>
                                 <p>
-                                    The orchestrated provisioning of multiple interdependent services with individual scaling requirements 
-                                    requires significant configuration effort.
+                                    No fast feedback on feature branches before merge.
                                 </p>
                             </div>
                             <div class="digital-card public-card">
                                 <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-28.svg" alt="">
+                                    <img src="assets/img/product/c-45.svg" alt="">
                                 </div>
-                                <span class="digital-label">Vendor Lock-In</span>
+                                <span class="digital-label">Compliance barriers</span>
                                 <p>
-                                    Proprietary cloud APIs bind infrastructure definitions to individual providers and complicate migration or 
-                                    multi-cloud operations.
+                                    Strict regulatory requirements prohibit external SaaS solutions in many enterprises and public institutions.
                                 </p>
                             </div>
                         </div>
@@ -470,14 +465,82 @@
                             <span class="digital-label">
                                 codesphere
                             </span>
-                            <h2>How Codesphere addresses this</h2>
+                            <h2>How Codesphere consolidates your developer platform</h2>
                             <p class="digital-desc">
-                                Codesphere provides an infrastructure-agnostic platform that consistently implements IaC principles – without the 
-                                operational friction of traditional setups. Codesphere Landscapes enable declarative multi-service deployments, 
-                                independently scalable and without requiring Kubernetes knowledge. The flexible public API allows programmatic 
-                                control of platform operations – from workspace provisioning to replica scaling. This enables seamless integration 
-                                into existing GitOps workflows and IaC toolchains.
+                                Codesphere brings together the entire software development lifecycle on a single, sovereign platform – on-premise, 
+                                in the cloud, or hybrid. Instead of a collection of loosely connected tools, teams get a coherent developer experience 
+                                from the first commit to production deployment.<br><br>
+
+                                <b>The platform provides:</b>
                             </p>
+                            <ul class="digital-list">
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>Remote desktops (Linux & Windows):</b>
+                                         Fully managed, browser-based development environments without local setup effort
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>WebIDE:</b>
+                                        A powerful, cloud-native IDE directly in the browser, including real-time collaboration
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>Remote development with VS Code, IntelliJ & Eclipse:</b>
+                                          Developers seamlessly connect their familiar local IDEs via SSH or remote tunnel to Codesphere workspaces
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>Integrated CI/CD:</b>
+                                        Automated pipelines with prepare, test, and run stages directly from the development environment, without 
+                                        external configurationDevelopers seamlessly connect their familiar local IDEs via SSH or remote tunnel to 
+                                        Codesphere workspaces
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>Preview deployments:</b>
+                                        Automatic deployment previews for pull requests, allowing teams to validate changes in isolation before merging 
+                                        into the main branch
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>Code reviews & collaboration:</b>
+                                        Integrated review workflows without context switching between development and review
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>Git hosting with OpenCode / Gitea:</b>
+                                        Self-hosted, sovereign Git repository management without dependency on external providers such as GitHub or GitLab
+                                    </span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -489,41 +552,41 @@
                 <div class="main-section">
                     <div class="digital-content">
                         <!-- <span class="digital-label">Key benefits at a glance</span> -->
-                        <h2>The benefits of Codesphere at a glance</h2>
+                        <h2>Your benefits with Codesphere</h2>
                         <div class="benefits-grid">
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-27.svg" alt="icon">
-                                <h3>No Kubernetes knowledge required</h3>
+                                <img src="assets/img/product/k-49.svg" alt="icon">
+                                <h3>Instant onboarding</h3>
                                 <p>
-                                    Landscapes abstract the complexity of Helm and enable multi-service deployments via YAML configuration directly from the UI or API.
+                                    New developers are productive in minutes, not days
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-28.svg" alt="icon">
-                                <h3>Full Automation</h3>
+                                <img src="assets/img/product/k-50.svg" alt="icon">
+                                <h3>Full digital sovereignty</h3>
                                 <p>
-                                    The public REST API allows programmatic control of all platform operations. Ideal for CI/CD pipelines and IaC toolchains.
+                                    The platform runs on your own infrastructure, including air-gapped environments.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-29.svg" alt="icon">
-                                <h3>Infrastructure and technology agnostic</h3>
+                                <img src="assets/img/product/k-51.svg" alt="icon">
+                                <h3>Up to 70% faster deployment cycles</h3>
                                 <p>
-                                    Codesphere runs on any infrastructure and avoids vendor lock-in typical of provider-specific IaC setups.
+                                    Through end-to-end automation.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-30.svg" alt="icon">
-                                <h3>Git as single source of truth</h3>
+                                <img src="assets/img/product/k-52.svg" alt="icon">
+                                <h3>IDE freedom</h3>
                                 <p>
-                                    All deployment configurations are versioned in .yml files, making them traceable, reviewable, and fully integrable into existing Git workflows.
+                                    No lock-in to a specific development environment.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-31.svg" alt="icon">
-                                <h3>Up to 40–60% reduction in total cost of ownership</h3>
+                                <img src="assets/img/product/k-53.svg" alt="icon">
+                                <h3>Compliance ready</h3>
                                 <p>
-                                    Through consolidated infrastructure and reduced DevOps effort.
+                                    Suitable for highly regulated industries such as finance, public administration, and critical infrastructure
                                 </p>
                             </div>
                         </div>

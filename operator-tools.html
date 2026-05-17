@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/img/favicon.png" sizes="32x32">
-    <title>Infrastructure as Code - codesphere</title>
+    <title>Operator Tools - codesphere</title>
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/inner.css" />
     <link rel="stylesheet" href="assets/responsive.css" />
@@ -374,23 +374,22 @@
 
     <div class="smooth-scroll">
         <!----------Hero Section------------>
-        <main class="hero hero1 product-hero">
+        <main class="hero hero1 product-hero except-hero">
             <div class="container-wrap">
                 <div class="hero-inner">
                     <div class="digital-content">
                         <div class="hero-icon">
-                            <img src="assets/img/product/mi-6.svg" alt="main-product"/>
+                            <img src="assets/img/product/mi-12.svg" alt="main-product"/>
                         </div>
-                        <div class="eyebrow">Infrastructure-as-Code with Codesphere: Automated, sovereign, scalable</div>
+                        <div class="eyebrow">Full control, everywhere</div>
                         <h1 style="margin-bottom:15px">
-                            Why IaC is indispensable in modern infrastructures.
+                            Operator tools for complex infrastructure landscapes
                         </h1>
                         <p class="digital-desc">
-                            Infrastructure-as-Code (IaC) has established itself as the standard for managing complex cloud and hybrid 
-                            environments. Instead of configuring infrastructure manually – also known as “ClickOps” – resources are 
-                            described declaratively in versioned configuration files. Tools like Terraform translate API calls into 
-                            reproducible, versionable infrastructure states, enabling consistent deployments across multiple providers 
-                            and regions.
+                            Modern enterprise IT is rarely homogeneous. Production environments often span on-premise data centers, multiple public 
+                            cloud providers, and hybrid setups simultaneously. Operations teams face the daily challenge of running, monitoring, and 
+                            scaling distributed systems consistently without being locked into proprietary toolchains of individual providers. The 
+                            result is fragmented processes, blind spots in observability, and exponentially increasing operational overhead.
                         </p>
                     </div>
                 </div>
@@ -403,10 +402,10 @@
                     <!-- SECTION HEADING -->
                     <div class="digital-content">
                         <span class="digital-label">
-                            The challenges in practice
+                            The challenges in operating distributed infrastructures
                         </span>
                         <h2>
-                            In enterprise environments, however, it quickly becomes clear where traditional IaC approaches reach their limits
+                            Anyone operating multi-cluster environments without a unified abstraction layer knows the issues 
                         </h2>
                         <!-- <p class="digital-desc">
                             Many companies reach operational and security limits when managing their network infrastructure:
@@ -417,43 +416,39 @@
                         <div class="public-grid">
                             <div class="digital-card public-card">
                                 <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-25.svg" alt="">
+                                    <img src="assets/img/product/c-51.svg" alt="">
                                 </div>
-                                <span class="digital-label">State management & drift</span>
+                                <span class="digital-label">Infrastructure lock-in</span>
                                 <p>
-                                    Terraform state files must be kept secure and consistent. Parallel operations and manual changes via 
-                                    console or CLI lead to drift and hard-to-trace inconsistencies between the desired and actual 
-                                    infrastructure state.
+                                    Each cloud provider introduces its own deployment paradigms, CLI tools, and monitoring stacks.
                                 </p>
                             </div>
                             <div class="digital-card public-card">
                                 <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-26.svg" alt="">
+                                    <img src="assets/img/product/c-52.svg" alt="">
                                 </div>
-                                <span class="digital-label">Kubernetes complexity</span>
+                                <span class="digital-label">Lack of centralized control</span>
                                 <p>
-                                    Abstraction via Helm charts and Kubernetes clusters requires deep expertise and blocks teams without 
-                                    specialized DevOps resources.
+                                    Managing multiple Kubernetes clusters across different regions and providers requires significant manual 
+                                    effort and deep Kubernetes expertise.
                                 </p>
                             </div>
                             <div class="digital-card public-card">
                                 <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-27.svg" alt="">
+                                    <img src="assets/img/product/c-53.svg" alt="">
                                 </div>
-                                <span class="digital-label">Multi-service coordination</span>
+                                <span class="digital-label">Incomplete observability</span>
                                 <p>
-                                    The orchestrated provisioning of multiple interdependent services with individual scaling requirements 
-                                    requires significant configuration effort.
+                                    Logs, metrics, and traces are spread across different systems, slowing incident response and root-cause analysis.
                                 </p>
                             </div>
                             <div class="digital-card public-card">
                                 <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-28.svg" alt="">
+                                    <img src="assets/img/product/c-54.svg" alt="">
                                 </div>
-                                <span class="digital-label">Vendor Lock-In</span>
+                                <span class="digital-label">Scalability vs. complexity</span>
                                 <p>
-                                    Proprietary cloud APIs bind infrastructure definitions to individual providers and complicate migration or 
-                                    multi-cloud operations.
+                                    The larger the infrastructure, the harder it becomes to enforce consistent deployment processes and compliance requirements.
                                 </p>
                             </div>
                         </div>
@@ -470,14 +465,48 @@
                             <span class="digital-label">
                                 codesphere
                             </span>
-                            <h2>How Codesphere addresses this</h2>
+                            <h2>One platform – any infrastructure</h2>
                             <p class="digital-desc">
-                                Codesphere provides an infrastructure-agnostic platform that consistently implements IaC principles – without the 
-                                operational friction of traditional setups. Codesphere Landscapes enable declarative multi-service deployments, 
-                                independently scalable and without requiring Kubernetes knowledge. The flexible public API allows programmatic 
-                                control of platform operations – from workspace provisioning to replica scaling. This enables seamless integration 
-                                into existing GitOps workflows and IaC toolchains.
+                                Codesphere was designed from the ground up to be installable on any infrastructure – whether managed Kubernetes 
+                                (OpenShift, AKS), classic VMs, bare metal, or air-gapped environments. The platform acts as a unified abstraction 
+                                layer that encapsulates infrastructure-specific complexity and provides operations teams with a consistent interface, 
+                                regardless of the underlying stack.
                             </p>
+                            <p class="digital-desc">
+                                Codesphere’s Operations Management System (OMS) enables centralized management of multiple clusters and deployment 
+                                environments from a single control plane. Self-service deployments, CI/CD integration (GitHub, GitLab, Bitbucket), 
+                                and configurable scaling rules can be applied consistently across the platform. This is complemented by a fully 
+                                integrated observability layer that requires no code changes:
+                            </p>
+                            <ul class="digital-list">
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>Resource & uptime monitoring:</b>
+                                        CPU, memory, and storage utilization as well as uptime trends at workspace level
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>Application performance monitoring:</b>
+                                        Request tracing (inbound, outbound, intra-service), log explorer, and real-time error analysis
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>FinOps monitoring:</b>
+                                        Usage analysis and cost optimization potential at cluster and team level
+                                    </span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -489,41 +518,42 @@
                 <div class="main-section">
                     <div class="digital-content">
                         <!-- <span class="digital-label">Key benefits at a glance</span> -->
-                        <h2>The benefits of Codesphere at a glance</h2>
+                        <h2>Your benefits with Codesphere</h2>
                         <div class="benefits-grid">
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-27.svg" alt="icon">
-                                <h3>No Kubernetes knowledge required</h3>
+                                <img src="assets/img/product/k-60.svg" alt="icon">
+                                <h3>Infrastructure-agnostic</h3>
                                 <p>
-                                    Landscapes abstract the complexity of Helm and enable multi-service deployments via YAML configuration directly from the UI or API.
+                                    Deployment on managed Kubernetes, VMs, bare metal, or air-gapped setups
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-28.svg" alt="icon">
-                                <h3>Full Automation</h3>
+                                <img src="assets/img/product/k-61.svg" alt="icon">
+                                <h3>Centralized multi-cluster management</h3>
                                 <p>
-                                    The public REST API allows programmatic control of all platform operations. Ideal for CI/CD pipelines and IaC toolchains.
+                                    Unified control of distributed infrastructures without proprietary tooling overhead.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-29.svg" alt="icon">
-                                <h3>Infrastructure and technology agnostic</h3>
+                                <img src="assets/img/product/k-62.svg" alt="icon">
+                                <h3>Zero-setup observability</h3>
                                 <p>
-                                    Codesphere runs on any infrastructure and avoids vendor lock-in typical of provider-specific IaC setups.
+                                    Full transparency over performance, resources, and costs from installation onward, without 
+                                    additional configuration.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-30.svg" alt="icon">
-                                <h3>Git as single source of truth</h3>
+                                <img src="assets/img/product/k-63.svg" alt="icon">
+                                <h3>No Kubernetes expertise required</h3>
                                 <p>
-                                    All deployment configurations are versioned in .yml files, making them traceable, reviewable, and fully integrable into existing Git workflows.
+                                    Operator workflows are standardized and versioned via Git in a scalable and traceable way.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-31.svg" alt="icon">
-                                <h3>Up to 40–60% reduction in total cost of ownership</h3>
+                                <img src="assets/img/product/k-64.svg" alt="icon">
+                                <h3>Digital sovereignty</h3>
                                 <p>
-                                    Through consolidated infrastructure and reduced DevOps effort.
+                                    Full data control, European operation, and compliance readiness for regulated industries.
                                 </p>
                             </div>
                         </div>

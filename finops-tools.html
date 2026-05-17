@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/img/favicon.png" sizes="32x32">
-    <title>Infrastructure as Code - codesphere</title>
+    <title>FinOps Tools - codesphere</title>
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/inner.css" />
     <link rel="stylesheet" href="assets/responsive.css" />
@@ -374,87 +374,90 @@
 
     <div class="smooth-scroll">
         <!----------Hero Section------------>
-        <main class="hero hero1 product-hero">
+        <main class="hero hero1 product-hero except-hero">
             <div class="container-wrap">
                 <div class="hero-inner">
                     <div class="digital-content">
                         <div class="hero-icon">
-                            <img src="assets/img/product/mi-6.svg" alt="main-product"/>
+                            <img src="assets/img/product/mi-11.svg" alt="main-product"/>
                         </div>
-                        <div class="eyebrow">Infrastructure-as-Code with Codesphere: Automated, sovereign, scalable</div>
+                        <div class="eyebrow">FinOps Tools</div>
                         <h1 style="margin-bottom:15px">
-                            Why IaC is indispensable in modern infrastructures.
+                            Keeping infrastructure costs under control – from the start.
                         </h1>
                         <p class="digital-desc">
-                            Infrastructure-as-Code (IaC) has established itself as the standard for managing complex cloud and hybrid 
-                            environments. Instead of configuring infrastructure manually – also known as “ClickOps” – resources are 
-                            described declaratively in versioned configuration files. Tools like Terraform translate API calls into 
-                            reproducible, versionable infrastructure states, enabling consistent deployments across multiple providers 
-                            and regions.
+                            Cloud-native development brings immense flexibility – but also growing complexity in cost management. 
+                            As the number of services, teams, and environments increases, companies quickly lose track of actual 
+                            resource consumption and the associated costs. FinOps, the practice of operationalizing financial 
+                            accountability in distributed infrastructures, is no longer a nice-to-have but a critical component 
+                            of any scalable DevOps strategy.
                         </p>
                     </div>
                 </div>
             </div>
         </main>
 
-        <section class="public-sector-section">
+        <section class="vc-journey">
             <div class="container-wrap">
                 <div class="main-section">
-                    <!-- SECTION HEADING -->
                     <div class="digital-content">
-                        <span class="digital-label">
-                            The challenges in practice
-                        </span>
-                        <h2>
-                            In enterprise environments, however, it quickly becomes clear where traditional IaC approaches reach their limits
-                        </h2>
-                        <!-- <p class="digital-desc">
-                            Many companies reach operational and security limits when managing their network infrastructure:
-                        </p> -->
-                        <!-- TOP CARDS -->
-                    </div>
-                    <div class="digital-content">
-                        <div class="public-grid">
-                            <div class="digital-card public-card">
-                                <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-25.svg" alt="">
+                        <span class="digital-label">The typical challenges in cloud cost management</span>
+                        <h2>Without appropriate tooling, structural blind spots quickly emerge</h2>
+                        <div class="journey-grid">
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/product/c-46.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">Lack of cost transparency</span>
+                                    <p class="digital-desc mb-0">
+                                        At team and project level: who is generating which costs?
+                                    </p>
                                 </div>
-                                <span class="digital-label">State management & drift</span>
-                                <p>
-                                    Terraform state files must be kept secure and consistent. Parallel operations and manual changes via 
-                                    console or CLI lead to drift and hard-to-trace inconsistencies between the desired and actual 
-                                    infrastructure state.
-                                </p>
                             </div>
-                            <div class="digital-card public-card">
-                                <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-26.svg" alt="">
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/product/c-47.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">Idle resources</span>
+                                    <p class="digital-desc mb-0">
+                                        And forgotten development environments consuming compute resources around the clock.
+                                    </p>
                                 </div>
-                                <span class="digital-label">Kubernetes complexity</span>
-                                <p>
-                                    Abstraction via Helm charts and Kubernetes clusters requires deep expertise and blocks teams without 
-                                    specialized DevOps resources.
-                                </p>
                             </div>
-                            <div class="digital-card public-card">
-                                <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-27.svg" alt="">
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/product/c-48.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">Fragmented metrics</span>
+                                    <p class="digital-desc mb-0">
+                                        From different cloud providers without a unified dashboard.
+                                    </p>
                                 </div>
-                                <span class="digital-label">Multi-service coordination</span>
-                                <p>
-                                    The orchestrated provisioning of multiple interdependent services with individual scaling requirements 
-                                    requires significant configuration effort.
-                                </p>
                             </div>
-                            <div class="digital-card public-card">
-                                <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-28.svg" alt="">
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/product/c-49.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">Lack of budget governance</span>
+                                    <p class="digital-desc mb-0">
+                                        No mechanism to proactively cap spending.
+                                    </p>
                                 </div>
-                                <span class="digital-label">Vendor Lock-In</span>
-                                <p>
-                                    Proprietary cloud APIs bind infrastructure definitions to individual providers and complicate migration or 
-                                    multi-cloud operations.
-                                </p>
+                            </div>
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/product/c-50.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">Reactive instead of proactive actions</span>
+                                    <p class="digital-desc mb-0">
+                                        Optimizations happen after costs occur, not before.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -470,13 +473,12 @@
                             <span class="digital-label">
                                 codesphere
                             </span>
-                            <h2>How Codesphere addresses this</h2>
+                            <h2>How Codesphere integrates FinOps into the platform</h2>
                             <p class="digital-desc">
-                                Codesphere provides an infrastructure-agnostic platform that consistently implements IaC principles – without the 
-                                operational friction of traditional setups. Codesphere Landscapes enable declarative multi-service deployments, 
-                                independently scalable and without requiring Kubernetes knowledge. The flexible public API allows programmatic 
-                                control of platform operations – from workspace provisioning to replica scaling. This enables seamless integration 
-                                into existing GitOps workflows and IaC toolchains.
+                                Codesphere addresses these challenges with natively integrated FinOps tooling – without external third-party systems 
+                                or manual reporting loops. Usage metrics are captured in granular detail. A complete audit log documents every workspace 
+                                start and stop, providing the data basis for precise resource analysis. The internal pricing model is flexibly configurable 
+                                for both private installs and the cloud version.
                             </p>
                         </div>
                     </div>
@@ -489,41 +491,48 @@
                 <div class="main-section">
                     <div class="digital-content">
                         <!-- <span class="digital-label">Key benefits at a glance</span> -->
-                        <h2>The benefits of Codesphere at a glance</h2>
+                        <h2>Your benefits with Codesphere</h2>
                         <div class="benefits-grid">
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-27.svg" alt="icon">
-                                <h3>No Kubernetes knowledge required</h3>
+                                <img src="assets/img/product/k-54.svg" alt="icon">
+                                <h3>Off-when-unused</h3>
                                 <p>
-                                    Landscapes abstract the complexity of Helm and enable multi-service deployments via YAML configuration directly from the UI or API.
+                                    Automatic shutdown of inactive development environments with near-instant restart, enabling cost savings without productivity loss.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-28.svg" alt="icon">
-                                <h3>Full Automation</h3>
+                                <img src="assets/img/product/k-55.svg" alt="icon">
+                                <h3>40–60% reduction in operating costs</h3>
                                 <p>
-                                    The public REST API allows programmatic control of all platform operations. Ideal for CI/CD pipelines and IaC toolchains.
+                                    Through self-service automation and consolidated infrastructure.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-29.svg" alt="icon">
-                                <h3>Infrastructure and technology agnostic</h3>
+                                <img src="assets/img/product/k-56.svg" alt="icon">
+                                <h3>Unified cost view</h3>
                                 <p>
-                                    Codesphere runs on any infrastructure and avoids vendor lock-in typical of provider-specific IaC setups.
+                                    Across on-premise, cloud, and hybrid environments – independent of the infrastructure provider.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-30.svg" alt="icon">
-                                <h3>Git as single source of truth</h3>
+                                <img src="assets/img/product/k-57.svg" alt="icon">
+                                <h3>Granular usage tracking</h3>
                                 <p>
-                                    All deployment configurations are versioned in .yml files, making them traceable, reviewable, and fully integrable into existing Git workflows.
+                                    With audit logs for full traceability and compliance.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-31.svg" alt="icon">
-                                <h3>Up to 40–60% reduction in total cost of ownership</h3>
+                                <img src="assets/img/product/k-58.svg" alt="icon">
+                                <h3>Proactive budget control</h3>
                                 <p>
-                                    Through consolidated infrastructure and reduced DevOps effort.
+                                    Through a credit-based system instead of reactive cost tracking.
+                                </p>
+                            </div>
+                            <div class="benefit-card">
+                                <img src="assets/img/product/k-59.svg" alt="icon">
+                                <h3>No vendor lock-in</h3>
+                                <p>
+                                    Because Codesphere is infrastructure-agnostic, teams retain full negotiation power with cloud providers.
                                 </p>
                             </div>
                         </div>

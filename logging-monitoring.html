@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/img/favicon.png" sizes="32x32">
-    <title>Infrastructure as Code - codesphere</title>
+    <title>Logging & Monitoring - codesphere</title>
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/inner.css" />
     <link rel="stylesheet" href="assets/responsive.css" />
@@ -374,87 +374,94 @@
 
     <div class="smooth-scroll">
         <!----------Hero Section------------>
-        <main class="hero hero1 product-hero">
+        <main class="hero hero1 product-hero except-hero">
             <div class="container-wrap">
                 <div class="hero-inner">
                     <div class="digital-content">
                         <div class="hero-icon">
-                            <img src="assets/img/product/mi-6.svg" alt="main-product"/>
+                            <img src="assets/img/product/mi-9.svg" alt="main-product"/>
                         </div>
-                        <div class="eyebrow">Infrastructure-as-Code with Codesphere: Automated, sovereign, scalable</div>
+                        <div class="eyebrow">Logging & Monitoring</div>
                         <h1 style="margin-bottom:15px">
-                            Why IaC is indispensable in modern infrastructures.
+                            Full observability from the first commit to production
                         </h1>
                         <p class="digital-desc">
-                            Infrastructure-as-Code (IaC) has established itself as the standard for managing complex cloud and hybrid 
-                            environments. Instead of configuring infrastructure manually – also known as “ClickOps” – resources are 
-                            described declaratively in versioned configuration files. Tools like Terraform translate API calls into 
-                            reproducible, versionable infrastructure states, enabling consistent deployments across multiple providers 
-                            and regions.
+                            In modern, distributed software architectures, visibility is not optional – it is a fundamental requirement. Whether 
+                            microservice architectures, hybrid multi-cloud setups, or air-gapped environments: development and operations teams 
+                            need reliable insights into system behavior. This is exactly where observability comes in with its three core signal 
+                            types: traces track the path of individual requests through distributed services, metrics provide continuous performance 
+                            indicators, and logs document discrete system events. Together, they form the complete picture of a running system.
                         </p>
                     </div>
                 </div>
             </div>
         </main>
 
-        <section class="public-sector-section">
+        <section class="vc-journey">
             <div class="container-wrap">
                 <div class="main-section">
-                    <!-- SECTION HEADING -->
                     <div class="digital-content">
-                        <span class="digital-label">
-                            The challenges in practice
-                        </span>
-                        <h2>
-                            In enterprise environments, however, it quickly becomes clear where traditional IaC approaches reach their limits
-                        </h2>
-                        <!-- <p class="digital-desc">
-                            Many companies reach operational and security limits when managing their network infrastructure:
-                        </p> -->
-                        <!-- TOP CARDS -->
-                    </div>
-                    <div class="digital-content">
-                        <div class="public-grid">
-                            <div class="digital-card public-card">
-                                <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-25.svg" alt="">
+                        <span class="digital-label">The real challenges in practice</span>
+                        <h2>The reality in many organizations looks different</h2>
+                        <p class="digital-desc">
+                            Observability is either fragmented, associated with high manual effort, or only available in production – and therefore 
+                            too late for effective debugging.
+                        </p>
+                        <div class="journey-grid">
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/product/c-37.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">Tool chaos</span>
+                                    <p class="digital-desc mb-0">
+                                        Separate solutions for logs, metrics, and traces without shared correlation.
+                                    </p>
                                 </div>
-                                <span class="digital-label">State management & drift</span>
-                                <p>
-                                    Terraform state files must be kept secure and consistent. Parallel operations and manual changes via 
-                                    console or CLI lead to drift and hard-to-trace inconsistencies between the desired and actual 
-                                    infrastructure state.
-                                </p>
                             </div>
-                            <div class="digital-card public-card">
-                                <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-26.svg" alt="">
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/product/c-38.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">Vendor Lock-in</span>
+                                    <p class="digital-desc mb-0">
+                                        Proprietary agents and SDKs tie teams to individual APM providers.
+                                    </p>
                                 </div>
-                                <span class="digital-label">Kubernetes complexity</span>
-                                <p>
-                                    Abstraction via Helm charts and Kubernetes clusters requires deep expertise and blocks teams without 
-                                    specialized DevOps resources.
-                                </p>
                             </div>
-                            <div class="digital-card public-card">
-                                <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-27.svg" alt="">
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/product/c-39.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">Late visibility</span>
+                                    <p class="digital-desc mb-0">
+                                        Monitoring only starts in production, not during development.
+                                    </p>
                                 </div>
-                                <span class="digital-label">Multi-service coordination</span>
-                                <p>
-                                    The orchestrated provisioning of multiple interdependent services with individual scaling requirements 
-                                    requires significant configuration effort.
-                                </p>
                             </div>
-                            <div class="digital-card public-card">
-                                <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-28.svg" alt="">
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/product/c-40.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">Instrumentation effort</span>
+                                    <p class="digital-desc mb-0">
+                                        Manual setup costs time and increases the risk of errors.
+                                    </p>
                                 </div>
-                                <span class="digital-label">Vendor Lock-In</span>
-                                <p>
-                                    Proprietary cloud APIs bind infrastructure definitions to individual providers and complicate migration or 
-                                    multi-cloud operations.
-                                </p>
+                            </div>
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/product/c-41.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">Lack of standards</span>
+                                    <p class="digital-desc mb-0">
+                                        Across teams and environments.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -470,13 +477,19 @@
                             <span class="digital-label">
                                 codesphere
                             </span>
-                            <h2>How Codesphere addresses this</h2>
+                            <h2>How Codesphere integrates observability across the entire software lifecycle</h2>
                             <p class="digital-desc">
-                                Codesphere provides an infrastructure-agnostic platform that consistently implements IaC principles – without the 
-                                operational friction of traditional setups. Codesphere Landscapes enable declarative multi-service deployments, 
-                                independently scalable and without requiring Kubernetes knowledge. The flexible public API allows programmatic 
-                                control of platform operations – from workspace provisioning to replica scaling. This enables seamless integration 
-                                into existing GitOps workflows and IaC toolchains.
+                                Codesphere solves these problems through a natively integrated observability layer – without code changes and without 
+                                separate setup. Developers gain access to traces, metrics, and logs directly on the platform from the very beginning 
+                                and already in early deployment phases. Codesphere’s application performance monitoring (APM) enables inbound, outbound, 
+                                and intra-service tracing as well as structured log exploration for error analysis. This is complemented by resource and 
+                                uptime monitoring at CPU, memory, and storage level, as well as FinOps dashboards for cost optimization.
+                            </p>
+                            <p class="digital-desc">
+                                For teams using OpenTelemetry (OTel), Codesphere provides native connector support. OTel has established itself as a 
+                                vendor-neutral CNCF standard for instrumentation, collection, and export of telemetry data and is supported by more 
+                                than 90 observability providers. Via OTLP, telemetry data can be forwarded to any backend – Prometheus, Grafana, Jaeger, 
+                                or commercial solutions – without modifying the application itself.
                             </p>
                         </div>
                     </div>
@@ -489,41 +502,48 @@
                 <div class="main-section">
                     <div class="digital-content">
                         <!-- <span class="digital-label">Key benefits at a glance</span> -->
-                        <h2>The benefits of Codesphere at a glance</h2>
+                        <h2>Your benefits with Codesphere</h2>
                         <div class="benefits-grid">
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-27.svg" alt="icon">
-                                <h3>No Kubernetes knowledge required</h3>
+                                <img src="assets/img/product/k-43.svg" alt="icon">
+                                <h3>Zero-setup observability</h3>
                                 <p>
-                                    Landscapes abstract the complexity of Helm and enable multi-service deployments via YAML configuration directly from the UI or API.
+                                    Fully integrated, no configuration required.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-28.svg" alt="icon">
-                                <h3>Full Automation</h3>
+                                <img src="assets/img/product/k-44.svg" alt="icon">
+                                <h3>Shift-left monitoring</h3>
                                 <p>
-                                    The public REST API allows programmatic control of all platform operations. Ideal for CI/CD pipelines and IaC toolchains.
+                                    Visibility already during development, not only in production.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-29.svg" alt="icon">
-                                <h3>Infrastructure and technology agnostic</h3>
+                                <img src="assets/img/product/k-45.svg" alt="icon">
+                                <h3>OTel-compatible</h3>
                                 <p>
-                                    Codesphere runs on any infrastructure and avoids vendor lock-in typical of provider-specific IaC setups.
+                                    Standard-compliant integration into existing observability stacks via OTLP.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-30.svg" alt="icon">
-                                <h3>Git as single source of truth</h3>
+                                <img src="assets/img/product/k-46.svg" alt="icon">
+                                <h3>No vendor lock-in</h3>
                                 <p>
-                                    All deployment configurations are versioned in .yml files, making them traceable, reviewable, and fully integrable into existing Git workflows.
+                                    Free choice of observability backend thanks to open standards.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-31.svg" alt="icon">
-                                <h3>Up to 40–60% reduction in total cost of ownership</h3>
+                                <img src="assets/img/product/k-47.svg" alt="icon">
+                                <h3>Unified platform</h3>
                                 <p>
-                                    Through consolidated infrastructure and reduced DevOps effort.
+                                    Traces, metrics, logs, and FinOps data in one consistent interface.
+                                </p>
+                            </div>
+                            <div class="benefit-card">
+                                <img src="assets/img/product/k-48.svg" alt="icon">
+                                <h3>Infrastructure-agnostic</h3>
+                                <p>
+                                    Works on-premise, in the cloud, and in air-gapped environments.
                                 </p>
                             </div>
                         </div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/img/favicon.png" sizes="32x32">
-    <title>Infrastructure as Code - codesphere</title>
+    <title>IAM & Security - codesphere</title>
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/inner.css" />
     <link rel="stylesheet" href="assets/responsive.css" />
@@ -379,18 +379,17 @@
                 <div class="hero-inner">
                     <div class="digital-content">
                         <div class="hero-icon">
-                            <img src="assets/img/product/mi-6.svg" alt="main-product"/>
+                            <img src="assets/img/product/mi-7.svg" alt="main-product"/>
                         </div>
-                        <div class="eyebrow">Infrastructure-as-Code with Codesphere: Automated, sovereign, scalable</div>
+                        <div class="eyebrow">IAM & Security</div>
                         <h1 style="margin-bottom:15px">
-                            Why IaC is indispensable in modern infrastructures.
+                            Managing identities, eliminating vulnerabilities.
                         </h1>
                         <p class="digital-desc">
-                            Infrastructure-as-Code (IaC) has established itself as the standard for managing complex cloud and hybrid 
-                            environments. Instead of configuring infrastructure manually – also known as “ClickOps” – resources are 
-                            described declaratively in versioned configuration files. Tools like Terraform translate API calls into 
-                            reproducible, versionable infrastructure states, enabling consistent deployments across multiple providers 
-                            and regions.
+                            In modern cloud environments, security is not an add-on. It is the foundation. Identity & Access Management (IAM) forms 
+                            the core: who can access which resource, when, and why? Combined with automated security scanning and consistent secrets 
+                            management, this creates a defense-in-depth strategy that meets regulatory requirements without slowing down development 
+                            teams.
                         </p>
                     </div>
                 </div>
@@ -406,7 +405,7 @@
                             The challenges in practice
                         </span>
                         <h2>
-                            In enterprise environments, however, it quickly becomes clear where traditional IaC approaches reach their limits
+                            Enterprise environments face the same structural security issues every day
                         </h2>
                         <!-- <p class="digital-desc">
                             Many companies reach operational and security limits when managing their network infrastructure:
@@ -417,43 +416,38 @@
                         <div class="public-grid">
                             <div class="digital-card public-card">
                                 <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-25.svg" alt="">
+                                    <img src="assets/img/product/c-29.svg" alt="">
                                 </div>
-                                <span class="digital-label">State management & drift</span>
+                                <span class="digital-label">Fragmented identity management</span>
                                 <p>
-                                    Terraform state files must be kept secure and consistent. Parallel operations and manual changes via 
-                                    console or CLI lead to drift and hard-to-trace inconsistencies between the desired and actual 
-                                    infrastructure state.
+                                    Different IAM solutions per cloud provider lead to inconsistent access policies and blind spots.
                                 </p>
                             </div>
                             <div class="digital-card public-card">
                                 <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-26.svg" alt="">
+                                    <img src="assets/img/product/c-30.svg" alt="">
                                 </div>
-                                <span class="digital-label">Kubernetes complexity</span>
+                                <span class="digital-label">Secrets sprawl</span>
                                 <p>
-                                    Abstraction via Helm charts and Kubernetes clusters requires deep expertise and blocks teams without 
-                                    specialized DevOps resources.
+                                    Credentials, API keys, and certificates end up in Git repositories, environment variables, or configuration files – often without rotation or audit trail.
                                 </p>
                             </div>
                             <div class="digital-card public-card">
                                 <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-27.svg" alt="">
+                                    <img src="assets/img/product/c-31.svg" alt="">
                                 </div>
-                                <span class="digital-label">Multi-service coordination</span>
+                                <span class="digital-label">Unpatched dependencies</span>
                                 <p>
-                                    The orchestrated provisioning of multiple interdependent services with individual scaling requirements 
-                                    requires significant configuration effort.
+                                    Without automated dependency scanning, known vulnerabilities (CVEs) remain active in production environments, often for months.
                                 </p>
                             </div>
                             <div class="digital-card public-card">
                                 <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-28.svg" alt="">
+                                    <img src="assets/img/product/c-32.svg" alt="">
                                 </div>
-                                <span class="digital-label">Vendor Lock-In</span>
+                                <span class="digital-label">Lack of standardization</span>
                                 <p>
-                                    Proprietary cloud APIs bind infrastructure definitions to individual providers and complicate migration or 
-                                    multi-cloud operations.
+                                    Evolved infrastructures with heterogeneous stacks make it difficult to enforce security policies consistently – especially in regulated industries such as finance, healthcare, or public administration.
                                 </p>
                             </div>
                         </div>
@@ -468,16 +462,48 @@
                     <div class="digital-content digiset" style="background:#fff;">
                         <div class="talent-main">
                             <span class="digital-label">
-                                codesphere
+                                How Codesphere solves IAM & Security
                             </span>
-                            <h2>How Codesphere addresses this</h2>
-                            <p class="digital-desc">
+                            <h2>Codesphere integrates proven open-source technologies directly into the platform and makes enterprise security the default configuration</h2>
+                            <!-- <p class="digital-desc">
                                 Codesphere provides an infrastructure-agnostic platform that consistently implements IaC principles – without the 
                                 operational friction of traditional setups. Codesphere Landscapes enable declarative multi-service deployments, 
                                 independently scalable and without requiring Kubernetes knowledge. The flexible public API allows programmatic 
                                 control of platform operations – from workspace provisioning to replica scaling. This enables seamless integration 
                                 into existing GitOps workflows and IaC toolchains.
-                            </p>
+                            </p> -->
+                            <ul class="digital-list">
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>Keycloak & OpenID Connect:</b>
+                                         Central identity brokering with SSO, RBAC, and federated identity via existing directory services (LDAP, 
+                                         Active Directory). Developers authenticate once and gain role-based access to exactly the resources they need
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>OpenBAO Vault:</b>
+                                        Dynamic secrets management for short-lived credentials, automatic secret rotation, and auditable access logs. 
+                                        No hardcoded credential ever ends up in a deployment
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>Security Scanning & Dependabot:</b>
+                                          Automated container and dependency scanning in the CI/CD process. Critical vulnerabilities are identified before 
+                                          reaching production. Dependabot integrations keep dependencies continuously up to date
+                                    </span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -492,38 +518,39 @@
                         <h2>The benefits of Codesphere at a glance</h2>
                         <div class="benefits-grid">
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-27.svg" alt="icon">
-                                <h3>No Kubernetes knowledge required</h3>
+                                <img src="assets/img/product/k-32.svg" alt="icon">
+                                <h3>Zero trust by default</h3>
                                 <p>
-                                    Landscapes abstract the complexity of Helm and enable multi-service deployments via YAML configuration directly from the UI or API.
+                                    Every workload runs in a rootless, isolated environment with a least-privilege principle. Codesphere 
+                                    implements zero trust architecturally, not just as a policy.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-28.svg" alt="icon">
-                                <h3>Full Automation</h3>
+                                <img src="assets/img/product/k-33.svg" alt="icon">
+                                <h3>Compliance out of the box</h3>
                                 <p>
-                                    The public REST API allows programmatic control of all platform operations. Ideal for CI/CD pipelines and IaC toolchains.
+                                    ISO 27001 and SOC I+II certification as well as GDPR-compliant data handling are platform standards.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-29.svg" alt="icon">
-                                <h3>Infrastructure and technology agnostic</h3>
+                                <img src="assets/img/product/k-34.svg" alt="icon">
+                                <h3>Unified IAM across all infrastructures</h3>
                                 <p>
-                                    Codesphere runs on any infrastructure and avoids vendor lock-in typical of provider-specific IaC setups.
+                                    Whether on-premise, public cloud, or air-gapped – Keycloak and OpenBAO run consistently on every Codesphere instance.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-30.svg" alt="icon">
-                                <h3>Git as single source of truth</h3>
+                                <img src="assets/img/product/k-35.svg" alt="icon">
+                                <h3>Shift-left security</h3>
                                 <p>
-                                    All deployment configurations are versioned in .yml files, making them traceable, reviewable, and fully integrable into existing Git workflows.
+                                    Security is integrated into the development process. Scanning in the pipeline stage significantly reduces mean time to remediate.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-31.svg" alt="icon">
-                                <h3>Up to 40–60% reduction in total cost of ownership</h3>
+                                <img src="assets/img/product/k-36.svg" alt="icon">
+                                <h3>Full auditability</h3>
                                 <p>
-                                    Through consolidated infrastructure and reduced DevOps effort.
+                                    All access, secret usage, and deployment events are fully logged and available for internal reviews and external audits.
                                 </p>
                             </div>
                         </div>

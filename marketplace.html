@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/img/favicon.png" sizes="32x32">
-    <title>Infrastructure as Code - codesphere</title>
+    <title>Marketplace - codesphere</title>
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/inner.css" />
     <link rel="stylesheet" href="assets/responsive.css" />
@@ -374,87 +374,73 @@
 
     <div class="smooth-scroll">
         <!----------Hero Section------------>
-        <main class="hero hero1 product-hero">
+        <main class="hero hero1 product-hero except-hero">
             <div class="container-wrap">
                 <div class="hero-inner">
                     <div class="digital-content">
                         <div class="hero-icon">
-                            <img src="assets/img/product/mi-6.svg" alt="main-product"/>
+                            <img src="assets/img/product/mi-13.svg" alt="main-product"/>
                         </div>
-                        <div class="eyebrow">Infrastructure-as-Code with Codesphere: Automated, sovereign, scalable</div>
+                        <div class="eyebrow">Marketplace – An ecosystem for all stakeholders</div>
                         <h1 style="margin-bottom:15px">
-                            Why IaC is indispensable in modern infrastructures.
+                            From tool integration to the end-user portal
                         </h1>
                         <p class="digital-desc">
-                            Infrastructure-as-Code (IaC) has established itself as the standard for managing complex cloud and hybrid 
-                            environments. Instead of configuring infrastructure manually – also known as “ClickOps” – resources are 
-                            described declaratively in versioned configuration files. Tools like Terraform translate API calls into 
-                            reproducible, versionable infrastructure states, enabling consistent deployments across multiple providers 
-                            and regions.
+                            Modern software ecosystems are complex, and the requirements of the involved stakeholders could hardly be more different. 
+                            Software vendors need a fast, standardized way to provide and monetize their tools. Platform operators struggle daily with 
+                            increasing infrastructure complexity, lack of governance visibility, and the pressure to reliably enforce compliance requirements 
+                            in regulated environments. End users, on the other hand, expect seamless integration experiences directly within their own portals.
                         </p>
                     </div>
                 </div>
             </div>
         </main>
 
-        <section class="public-sector-section">
+        <section class="vc-journey">
             <div class="container-wrap">
                 <div class="main-section">
-                    <!-- SECTION HEADING -->
                     <div class="digital-content">
-                        <span class="digital-label">
-                            The challenges in practice
-                        </span>
-                        <h2>
-                            In enterprise environments, however, it quickly becomes clear where traditional IaC approaches reach their limits
-                        </h2>
-                        <!-- <p class="digital-desc">
-                            Many companies reach operational and security limits when managing their network infrastructure:
-                        </p> -->
-                        <!-- TOP CARDS -->
-                    </div>
-                    <div class="digital-content">
-                        <div class="public-grid">
-                            <div class="digital-card public-card">
-                                <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-25.svg" alt="">
+                        <span class="digital-label">The Challenges</span>
+                        <h2>Fragmentation costs time, money, and control</h2>
+                        <p class="digital-desc">
+                            In practice, many platform strategies fail not due to a lack of ideas, but due to a lack of standards.
+                        </p>
+                        <div class="journey-grid">
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/product/c-55.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">For software vendors</span>
+                                    <p class="digital-desc mb-0">
+                                        Lack of tooling standards forces each provider to reinvent the wheel. CI/CD pipelines, deployment logic, 
+                                        and onboarding flows are built individually, increasing time to market.
+                                    </p>
                                 </div>
-                                <span class="digital-label">State management & drift</span>
-                                <p>
-                                    Terraform state files must be kept secure and consistent. Parallel operations and manual changes via 
-                                    console or CLI lead to drift and hard-to-trace inconsistencies between the desired and actual 
-                                    infrastructure state.
-                                </p>
                             </div>
-                            <div class="digital-card public-card">
-                                <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-26.svg" alt="">
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/product/c-56.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">For operators</span>
+                                    <p class="digital-desc mb-0">
+                                        Without a centralized governance layer, the platform grows uncontrollably: inconsistent security standards, 
+                                        lack of cost transparency, missing auditability – a deal-breaker especially in regulated industries.
+                                    </p>
                                 </div>
-                                <span class="digital-label">Kubernetes complexity</span>
-                                <p>
-                                    Abstraction via Helm charts and Kubernetes clusters requires deep expertise and blocks teams without 
-                                    specialized DevOps resources.
-                                </p>
                             </div>
-                            <div class="digital-card public-card">
-                                <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-27.svg" alt="">
+                            <div class="digital-card">
+                                <div class="digital-content">
+                                    <div class="text-center stack-image">
+                                        <img src="assets/img/product/c-57.svg" alt="stack">
+                                    </div>
+                                    <span class="digital-label mb-0">For end-users</span>
+                                    <p class="digital-desc mb-0">
+                                        Isolated solutions without deep portal integration create silos and lead to a fragmented developer experience, 
+                                        reducing adoption and productivity.
+                                    </p>
                                 </div>
-                                <span class="digital-label">Multi-service coordination</span>
-                                <p>
-                                    The orchestrated provisioning of multiple interdependent services with individual scaling requirements 
-                                    requires significant configuration effort.
-                                </p>
-                            </div>
-                            <div class="digital-card public-card">
-                                <div class="public-icon text-center">
-                                    <img src="assets/img/product/c-28.svg" alt="">
-                                </div>
-                                <span class="digital-label">Vendor Lock-In</span>
-                                <p>
-                                    Proprietary cloud APIs bind infrastructure definitions to individual providers and complicate migration or 
-                                    multi-cloud operations.
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -468,16 +454,44 @@
                     <div class="digital-content digiset" style="background:#fff;">
                         <div class="talent-main">
                             <span class="digital-label">
-                                codesphere
+                                How codesphere solves this
                             </span>
-                            <h2>How Codesphere addresses this</h2>
+                            <h2>A marketplace ecosystem with clear role separation</h2>
                             <p class="digital-desc">
-                                Codesphere provides an infrastructure-agnostic platform that consistently implements IaC principles – without the 
-                                operational friction of traditional setups. Codesphere Landscapes enable declarative multi-service deployments, 
-                                independently scalable and without requiring Kubernetes knowledge. The flexible public API allows programmatic 
-                                control of platform operations – from workspace provisioning to replica scaling. This enables seamless integration 
-                                into existing GitOps workflows and IaC toolchains.
+                                Codesphere provides dedicated toolkits for each stakeholder – fully integrated into a sovereign, infrastructure-agnostic platform:
                             </p>
+                            <ul class="digital-list">
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>Toolkits for software vendors</b>
+                                        enable providers to package, version, and publish their solutions in a standardized way in the marketplace. Thanks to 
+                                        Codesphere’s patented deployment technology, workspaces are provisioned reproducibly and stack-agnostic
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>Governance and platform tools for operators</b>
+                                        provide the necessary transparency and control: access management, cost control, policy enforcement, and compliance 
+                                        monitoring are centrally managed – even in air-gapped or highly regulated environments such as banks or public authorities
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="assets/img/check.svg" alt="icon">
+                                    </span>
+                                    <span>
+                                        <b>Integration toolkit for end-user portals</b>
+                                        allows marketplace content and developer workflows to be embedded directly into existing portals. APIs and standardized 
+                                        interfaces ensure that end users do not need to switch contexts
+                                    </span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -489,41 +503,41 @@
                 <div class="main-section">
                     <div class="digital-content">
                         <!-- <span class="digital-label">Key benefits at a glance</span> -->
-                        <h2>The benefits of Codesphere at a glance</h2>
+                        <h2>The benefits at a glance: What Codesphere delivers</h2>
                         <div class="benefits-grid">
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-27.svg" alt="icon">
-                                <h3>No Kubernetes knowledge required</h3>
+                                <img src="assets/img/product/k-65.svg" alt="icon">
+                                <h3>Up to 70% faster deployment cycles</h3>
                                 <p>
-                                    Landscapes abstract the complexity of Helm and enable multi-service deployments via YAML configuration directly from the UI or API.
+                                    Through standardized workflows and self-service CI/CD.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-28.svg" alt="icon">
-                                <h3>Full Automation</h3>
+                                <img src="assets/img/product/k-66.svg" alt="icon">
+                                <h3>40–60% reduction in total cost of ownership</h3>
                                 <p>
-                                    The public REST API allows programmatic control of all platform operations. Ideal for CI/CD pipelines and IaC toolchains.
+                                    Through consolidated infrastructure and reduced manual effort.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-29.svg" alt="icon">
-                                <h3>Infrastructure and technology agnostic</h3>
+                                <img src="assets/img/product/k-67.svg" alt="icon">
+                                <h3>Full digital sovereignty</h3>
                                 <p>
-                                    Codesphere runs on any infrastructure and avoids vendor lock-in typical of provider-specific IaC setups.
+                                    Deployable on-premise, in the cloud, or hybrid – 100% European.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-30.svg" alt="icon">
-                                <h3>Git as single source of truth</h3>
+                                <img src="assets/img/product/k-68.svg" alt="icon">
+                                <h3>No vendor lock-in</h3>
                                 <p>
-                                    All deployment configurations are versioned in .yml files, making them traceable, reviewable, and fully integrable into existing Git workflows.
+                                    The platform fully abstracts the underlying infrastructure.
                                 </p>
                             </div>
                             <div class="benefit-card">
-                                <img src="assets/img/product/k-31.svg" alt="icon">
-                                <h3>Up to 40–60% reduction in total cost of ownership</h3>
+                                <img src="assets/img/product/k-69.svg" alt="icon">
+                                <h3>Compliance-ready for regulated industries</h3>
                                 <p>
-                                    Through consolidated infrastructure and reduced DevOps effort.
+                                    GDPR-compliant, auditable, air-gap capable.
                                 </p>
                             </div>
                         </div>

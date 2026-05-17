@@ -273,6 +273,9 @@ p {
 .product-hero{
   padding:145px 0 135px;
 }
+.except-hero{
+  padding:100px 0 120px;
+}
 .hero-inner h1 {
   font-size: 60px;
   line-height: 68px;
@@ -408,7 +411,7 @@ p {
   justify-content: center;
 }
 .digital-content.digiset {
-  padding: 150px 36px 100px;
+	padding: 120px 36px 80px;
 }
 .digital-content .digital-label {
   font-size: 20px;
