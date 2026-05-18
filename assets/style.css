@@ -336,7 +336,7 @@ p {
 .card-section .cards.faster-card .card {
   height: 180px;
 }
-.card-section .cards .card h3 {
+.card-section .cards .card h1 {
   font-size: 20px;
   line-height: 1.2;
   margin-bottom: 10px;
